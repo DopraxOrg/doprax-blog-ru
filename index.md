@@ -1,4 +1,4 @@
-Welcome to the Doprax blog.
+## Welcome to the Doprax blog.
 
 This is the home for practical guides, tutorials, comparisons, and updates from the Doprax team. 
 
