@@ -1,99 +1,96 @@
-# V2Ray/Xray Server Setup on Doprax ProVM – Complete 2026 Tutorial  
-**Unlimited Traffic + Reality Protocol (Hiddify or 3X-UI)**
+# Настройка сервера V2Ray/Xray на Doprax ProVM — Полный гайд 2026
 
-Deploy a production-ready Xray server with **REALITY** protocol in under 10 minutes.  
-No DevOps experience required. Unlimited bandwidth, 1 Gbps ports, clean dedicated IPs, and it spins up in <60 seconds.
+**Безлимитный трафик + протокол REALITY (Hiddify или 3X-UI)**
 
-**Why Doprax ProVM for this?**  
-- Truly unlimited traffic (no TB caps, no overages)  
-- Modern CPUs + 1 Gbps dedicated ports  
-- Clean IPs perfect for proxy/VPN workloads  
-- Pay-per-second billing + crypto payments  
-- Deploy real infrastructure in minutes — without managing servers.
+Развертываем готовый к продакшену сервер Xray с протоколом **REALITY** меньше чем за 10 минут.  
+Опыт в DevOps не требуется. Безлимитный канал, порты 1 Гбит/с, чистые выделенные IP и запуск инстанса менее чем за 60 секунд.
 
-This guide uses **ProVM** (Doprax’s own high-performance infrastructure). P1 ($8.95/mo) or P2 ($12.95/mo) is more than enough for most setups.
+> **Практический хаб по деплою, архитектуре и оптимизации инфраструктуры для современных билдеров.**
 
 ---
 
-## Prerequisites
-- A free Doprax account → [doprax.com](https://www.doprax.com)
-- Basic SSH knowledge
-- (Optional but recommended) Your own domain for even better stealth (not required with REALITY)
+### Почему именно Doprax ProVM?
+* **Реально безлимитный трафик** — никаких лимитов в ТБ и доплат за перерасход.
+* **Современные процессоры + выделенные порты 1 Гбит/с**.
+* **Чистые IP**, которые отлично подходят для прокси и VPN.
+* **Посекундная тарификация + оплата криптой**.
+* **Деплой полноценной инфраструктуры за минуты** — без лишней возни с администрированием.
+
+В этом гайде используем **ProVM** (собственная инфраструктура Doprax). Конфига `P1` ($8.95/мес) или `P2` ($12.95/мес) хватит для большинства задач.
 
 ---
 
-## Step 1: Create Your ProVM (Exact Dashboard Flow)
+## Предварительные требования
+* Аккаунт на Doprax → [doprax.com](https://www.doprax.com)
+* Базовые навыки работы с SSH
+* (Опционально) Свой домен для пущей скрытности (для REALITY не обязателен)
 
-1. Log in to the Doprax Dashboard  
-2. Go to **My Virtual Machines** → **Create a Virtual Machine**  
-3. **Provider**: Choose **ProVM** (recommended for unlimited traffic)  
-4. **Location**: Any available (Germany, France, Poland, UK, or Canada)  
-5. **OS Image**: **Ubuntu 24.04** (recommended) or Ubuntu 22.04  
+---
+
+## Шаг 1: Создаем ProVM (пошагово в панели)
+
+1. Логинимся в панель Doprax.
+2. Идем в **My Virtual Machines** → **Create a Virtual Machine**.
+3. **Provider**: Выбираем **ProVM**.
+4. **Location**: Любая доступная локация (Германия, Франция, Польша и т.д.).
+5. **OS Image**: **Ubuntu 24.04** (рекомендуется).
 6. **Size**:  
-   - P1 (1 vCPU / 1 GB) – fine for personal use  
-   - P2 (1 vCPU / 2 GB) – recommended for multiple users  
-7. **Access Method**: **SSH Key** (strongly recommended for security)  
-8. **Name**: e.g. `xray-reality-2026`  
-9. Click **Create Virtual Machine**
+   * `P1` (1 vCPU / 1 GB) — для личного использования.  
+   * `P2` (1 vCPU / 2 GB) — если будете раздавать доступ друзьям.
+7. **Access Method**: **SSH Key** (настоятельно рекомендую).
+8. **Name**: например, `xray-reality-2026`.
+9. Жмем **Create Virtual Machine**.
 
-Your VM will be ready in **under 60 seconds**.  
-You will see the public IPv4 address and `root` username.
+ВМ будет готова **меньше чем за 60 секунд**. Вы увидите IPv4 адрес и пользователя `root`.
 
 ---
 
-## Step 2: Connect to Your Server
+## Шаг 2: Подключаемся к серверу
 
 ```bash
-ssh root@YOUR-PROVM-IP
+ssh root@ВАШ-IP-PROVM
 ```
-Update the system first:
-```
+Первым делом обновляем систему:
+
+```bash
 apt update && apt upgrade -y
 ```
-## Step 3: Choose Your Installation Method
+## Шаг 3: Выбираем способ установки
+### Вариант А: Панель Hiddify (Самый простой — Рекомендую)
+Установка одной командой:
+```
+bash <(curl [https://i.hiddify.com/release](https://i.hiddify.com/release))
+```
+После установки:
 
-### Option A: Hiddify Panel (Easiest – Recommended)One-command install (official 2026 method):
-```
-bash <(curl https://i.hiddify.com/release)
-```
-After installation:
-- The script will give you the admin panel URL (usually https://YOUR-IP:9000)
-- Default username/password shown in terminal
-- In the panel → create a new user → choose Reality protocol
-- It auto-configures everything (VLESS + Reality + uTLS fingerprint)
+Скрипт выдаст URL админки (обычно https://ВАШ-IP:9000).
 
-Done. Your config URL is ready for clients.
+В панели создайте нового юзера и выберите протокол Reality.
 
-### Option B: 3X-UI Panel (More Control)One-command install:
-```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
-```
-During setup:
-- Set panel port (default 2053 recommended)
-- Choose username/password
-- After login (http://YOUR-IP:port) (http://YOUR-IP:port), go to Inbounds → Add new
-- Protocol: VLESS
-- Port: 443
-- Security: reality
-- Fingerprint: chrome (or firefox)
-- Dest: www.microsoft.com:443 (or any popular site)
-- Short ID: generate one (8–16 hex chars)
-- Save → scan the QR code or copy the link
+Всё настроится автоматически (VLESS + Reality + uTLS).
+### Вариант Б: Панель 3X-UI (Больше контроля)
+Установка одной командой:
+```bash <(curl -Ls [https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh](https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh))```
+Настройка:
 
-### Option C: Manual Xray + REALITY (Advanced / Full Control)
-```
-bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
-```
-Create /usr/local/etc/xray/config.json:
+Зайдите в панель (http://ВАШ-IP:порт).
 
-```
-{
+Inbounds → Add new.
+
+Protocol: vless, Port: 443, Security: reality.
+
+Dest: www.microsoft.com:443, Fingerprint: chrome.
+
+### Вариант В: Ручной Xray + REALITY (Advanced)
+```bash -c "$(curl -L [https://github.com/XTLS/Xray-install/raw/main/install-release.sh](https://github.com/XTLS/Xray-install/raw/main/install-release.sh))" @ install```
+Создайте /usr/local/etc/xray/config.json:
+```{
   "log": { "loglevel": "warning" },
   "inbounds": [{
     "port": 443,
     "protocol": "vless",
     "settings": {
-      "clients": [{ "id": "YOUR-UUID-HERE", "flow": "xtls-rprx-vision" }],
+      "clients": [{ "id": "ВАШ-UUID", "flow": "xtls-rprx-vision" }],
       "decryption": "none"
     },
     "streamSettings": {
@@ -101,55 +98,40 @@ Create /usr/local/etc/xray/config.json:
       "security": "reality",
       "realitySettings": {
         "show": false,
-        "dest": "www.microsoft.com:443",
+        "dest": "[www.microsoft.com:443](https://www.microsoft.com:443)",
         "xver": 0,
-        "serverNames": ["www.microsoft.com"],
-        "privateKey": "YOUR-PRIVATE-KEY-HERE",
-        "shortIds": ["YOUR-SHORT-ID-HERE"]
+        "serverNames": ["[www.microsoft.com](https://www.microsoft.com)"],
+        "privateKey": "ВАШ-PRIVATE-KEY",
+        "shortIds": ["ВАШ-SHORT-ID"]
       }
     }
   }],
   "outbounds": [{ "protocol": "freedom" }]
 }
 ```
-Generate keys & UUID:
+Генерация ключей:
 ```
-xray uuid                  # → copy this as YOUR-UUID-HERE
-xray x25519                # → copy privateKey and publicKey
+xray uuid
+xray x25519
 ```
-Replace values, then start:
+Запуск:
 ```
 systemctl enable --now xray
 ```
-## Step 4: Test Your Server
-Use any modern client:
-- HiddifyN / HiddifyNext (iOS/Android/Windows/Linux)
+## Шаг 4: Тестируем сервер
+Используйте любой современный клиент:
+- HiddifyNext (iOS/Android/Desktop)
 - v2rayN (Windows)
 - Nekobox (Android)
-- Streisand (macOS)
 
-Import the config URL or QR code → connect → test speed and IP.Expected result: Full speed (limited only by your client connection) with zero throttling.
----
-## Why This Setup Wins on Doprax ProVM
-- Unlimited traffic → run it 24/7 with 100+ users without extra fees
-- 1 Gbps port → real-world 500–900 Mbps speeds
-- Clean IPs → high success rate with Reality
-- Instant provisioning + hourly billing → test and destroy VMs in seconds
-- Full root access + snapshots for backup
----
-## Troubleshooting
-Port 443 blocked? → ProVM opens all ports by default
-"Connection refused"? → ufw allow 443 or systemctl restart xray
-Slow speeds? → Try different fingerprint (chrome / firefox / random)
-Need to change IP? → $4.50 one-time fee in dashboard
+Импортируйте конфиг и проверяйте скорость. Ожидаемый результат: Full speed без троттлинга.
 
+## Почему этот сетап выигрывает?
+- Безлимит — качайте сколько угодно без доплат.
+- 1 Gbps — реальные скорости до 900 Мбит/с.
+- Чистые IP — высокий шанс, что REALITY заведется с полпинка.
 
-
-
-
-
-
-
-
-
-
+## Траблшутинг
+- Порт 443 закрыт? — На ProVM все порты открыты по дефолту.
+- Не коннектит? — Проверьте статус: systemctl status xray.
+- Медленно? — Смените домен в dest на другой популярный ресурс.
