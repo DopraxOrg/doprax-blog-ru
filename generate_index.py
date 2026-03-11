@@ -10,24 +10,28 @@ for post in posts:
     if post.endswith(".md"):
         name = post.replace(".md","")
         parts = name.split("-")
+
         date = "-".join(parts[:3])
         title = " ".join(parts[3:]).replace("-", " ").title()
 
-        lines.append(f"- **{date}** — [{title}]({BLOG_DIR}/{post})")
+        lines.append(f"- **{date}** — [{title}](blog/{post})")
 
 blog_index = "\n".join(lines)
 
 
-def update_file(file):
-    with open(file) as f:
+def update_file(filename):
+    with open(filename) as f:
         content = f.read()
 
     start = "<!-- BLOG START -->"
     end = "<!-- BLOG END -->"
 
-    new_content = content.split(start)[0] + start + "\n" + blog_index + "\n" + end
+    before = content.split(start)[0]
+    after = content.split(end)[1]
 
-    with open(file,"w") as f:
+    new_content = before + start + "\n" + blog_index + "\n" + end + after
+
+    with open(filename, "w") as f:
         f.write(new_content)
 
 
