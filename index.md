@@ -1,19 +1,22 @@
-Welcome to the Doprax blog.
+Добро пожаловать в блог Doprax!
 
-This is the home for practical guides, tutorials, comparisons, and updates from the Doprax team. 
+Здесь мы собираем практические руководства, туториалы, сравнения и свежие новости от команды Doprax.
 
-Here you'll find:
+Что вас ждет:
 
-* Step-by-step deployment tutorials (e.g., Node.js, Django, Telegram bots, V2Ray/Xray setups)
-* Honest infrastructure comparisons (ProVM vs. third-party providers, App Spaces vs. managed PaaS)
-* Benchmarks, cost breakdowns, and real-world tips
-* Spotlights on open-source tools we love and support
+Пошаговые гайды по деплою (например, Node.js, Django, Telegram-боты, настройка V2Ray/Xray)
 
-Questions or ideas? Drop them in issues.
+Честные сравнения инфраструктуры (ProVM против сторонних провайдеров, App Spaces против управляемых PaaS)
 
-Happy building.
+Бенчмарки, разбор стоимости и полезные советы из реальной практики
 
-## Articles
+Обзоры open-source инструментов, которые мы любим и поддерживаем
+
+Есть вопросы или идеи? Пишите в issues.
+
+Удачного билда!
+
+## Статьи в блоге
 
 <!-- BLOG START -->
 - **2026-03-11** — [Test Post](blog/2026-03-11-test-post.md)
