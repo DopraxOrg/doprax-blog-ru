@@ -1,0 +1,24 @@
+name: Update Blog Index
+
+on:
+  push:
+    paths:
+      - "blog/*.md"
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: generate index
+        run: python generate_index.py
+
+      - name: commit changes
+        run: |
+          git config --global user.name "blog-bot"
+          git config --global user.email "bot@github.com"
+          git add README.md index.md
+          git commit -m "update blog index" || exit 0
+          git push
