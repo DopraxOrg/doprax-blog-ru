@@ -61,3 +61,4 @@ services:
     scripts:
       run:
         - python manage.py migrate
+```
