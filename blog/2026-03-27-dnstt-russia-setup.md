@@ -19,6 +19,8 @@ DNS — это адресная книга интернета. Каждый ра
 
 ## Как запустить это на Doprax
 
+Repo: [https://github.com/bugfloyd/dnstt-deploy?tab=readme-ov-file](https://github.com/bugfloyd/dnstt-deploy?tab=readme-ov-file)
+
 **Подробная пошаговая инструкция по настройке этих файлов появится в следующем материале.**
 
 Итог
