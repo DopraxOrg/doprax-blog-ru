@@ -19,6 +19,7 @@
 ## Статьи в блоге
 
 <!-- BLOG START -->
+- **2026-04-01** — [2026-04-01-internet-ports](blog/2026-04-01-internet-ports.md)
 - **2026-03-30** — [2026-03-30-Install-Amnezia-VPN](blog/2026-03-30-Install-Amnezia-VPN.md)
 - **2026-03-27** — ["Как обойти блокировки через DNS-туннель: Инструкция по dnstt"](blog/2026-03-27-dnstt-russia-setup.md)
 - **2026-03-26** — ['What to Do When Your VPN Server Gets Blocked (IP Rotation Guide) — Extremely practical. Shows how to spin up a fresh Doprax VM with a new IP in minutes when the old one gets flagged.'](blog/2026-03-26-what-to-do-when-your-vpn-server-gets-blocked-ip-rotation-guide-extremely-practical-shows-how-to-spin-up-a-fresh-doprax-vm-with-a-new-ip-in-minutes-when-the-old-one-gets-flagged.md)
