@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Run Your Own V2Ray Server in 5 Minutes with Doprax — Targets "как поднять свой VPN на VPS""
+title: "How to Run Your Own V2Ray Server in 5 Minutes with Doprax — "как поднять свой VPN на VPS""
 date: 2026-03-26 14:20:31
 author: Doprax
 ---
