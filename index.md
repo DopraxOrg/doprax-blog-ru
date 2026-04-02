@@ -22,7 +22,7 @@
 - **2026-04-01** — [2026-04-01-internet-ports](blog/2026-04-01-internet-ports.md)
 - **2026-03-30** — [2026-03-30-Install-Amnezia-VPN](blog/2026-03-30-Install-Amnezia-VPN.md)
 - **2026-03-27** — ["Как обойти блокировки через DNS-туннель: Инструкция по dnstt"](blog/2026-03-27-dnstt-russia-setup.md)
-- **2026-03-26** — ['What to Do When Your VPN Server Gets Blocked (IP Rotation Guide) — Extremely practical. Shows how to spin up a fresh Doprax VM with a new IP in minutes when the old one gets flagged.'](blog/2026-03-26-what-to-do-when-your-vpn-server-gets-blocked-ip-rotation-guide-extremely-practical-shows-how-to-spin-up-a-fresh-doprax-vm-with-a-new-ip-in-minutes-when-the-old-one-gets-flagged.md)
+- **2026-03-26** — ['What to Do When Your VPN Server Gets Blocked (IP Rotation Guide)'](blog/2026-03-26-what-to-do-when-your-vpn-server-gets-blocked-ip-rotation-guide.md)
 - **2026-03-26** — ['VLESS, VMess, Trojan, Shadowsocks: Which Protocol Still Works in 2026? — Protocol comparison is endlessly searched. Position Doprax as the platform that supports all of them via 3x-ui.'](blog/2026-03-26-vless-vmess-trojan-shadowsocks-which-protocol-still-works-in-2026-protocol-comparison-is-endlessly-searched-position-doprax-as-the-platform-that-supports-all-of-them-via-3x-ui.md)
 - **2026-03-26** — ["How to Run Your Own V2Ray Server in 5 Minutes with Doprax — Targets "как поднять свой VPN на VPS""](blog/2026-03-26-how-to-run-your-own-v2ray-server-in-5-minutes-with-doprax-targets-vpn-vps-.md)
 - **2026-03-26** — ['3x-ui vs x-ui: Which XRay Panel to Choose and How to Deploy It'](blog/2026-03-26-3x-ui-vs-x-ui-which-xray-panel-to-choose-and-how-to-deploy-it.md)
