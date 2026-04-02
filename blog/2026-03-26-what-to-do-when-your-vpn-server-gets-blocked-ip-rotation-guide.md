@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'What to Do When Your VPN Server Gets Blocked (IP Rotation Guide) — Extremely practical. Shows how to spin up a fresh Doprax VM with a new IP in minutes when the old one gets flagged.'
+title: 'What to Do When Your VPN Server Gets Blocked (IP Rotation Guide)'
 date: 2026-03-26 15:30:49
 author: Doprax
 ---
