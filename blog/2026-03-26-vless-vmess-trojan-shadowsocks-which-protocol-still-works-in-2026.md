@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'VLESS, VMess, Trojan, Shadowsocks: Which Protocol Still Works in 2026? — Protocol comparison is endlessly searched. Position Doprax as the platform that supports all of them via 3x-ui.'
+title: 'VLESS, VMess, Trojan, Shadowsocks: Which Protocol Still Works in 2026?'
 date: 2026-03-26 16:14:27
 author: Doprax
 ---
