@@ -2,6 +2,7 @@
 
 Recent articles:
 <!-- BLOG START -->
+- **2026-04-13** — ["Свой VPN-сервер на VPS: обзор лучших open-source инструментов для развёртывания в 2026 году"](blog/2026-04-13-Open-Source-VPN.md)
 - **2026-04-01** — [2026-04-01-internet-ports](blog/2026-04-01-internet-ports.md)
 - **2026-03-30** — [2026-03-30-Install-Amnezia-VPN](blog/2026-03-30-Install-Amnezia-VPN.md)
 - **2026-03-27** — ["Как обойти блокировки через DNS-туннель: Инструкция по dnstt"](blog/2026-03-27-dnstt-russia-setup.md)
