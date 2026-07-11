@@ -5,35 +5,31 @@ Recent articles:
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-10
-
-- **Docker acquires AtomicJar, a testing startup that raised $25M in January - TechCrunch**
-  Приобретение компании AtomicJar (создателей Testcontainers) компанией Docker говорит о стремлении последней контролировать этап интеграционного тестирования в цикле разработки. Хотя это может улучшить интеграцию с Docker Desktop, инженерам, использующим независимые CI-конвейеры, стоит следить за тем, останутся ли базовые открытые библиотеки бесплатными и независимыми от конкретного вендора.
-  [Read more](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV2VIX3Nwc081WkdZbmpFQW9qcW53MS1sRDVWaEllTVpoYkw2cGtvVUdTUG9xR0FEb0xuZktMbXZYYnRnalQxNHUtN00xTFRwRUVSRkZGcTU2U1JqWlc3RHh3dHJiSUZSTXZEUlhPXy01YXJZM0s2SWljVUpOOXR4UW9rcWxQZG13VDRkZlVvczdhUkgxUkRHYlY2c05xUnRaVDdSYXNaRzE?oc=5)
+### Свежее — 2026-07-11
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Выпуск Nginx 1.29.8 параллельно с обновлениями FreeNginx устраняет критические уязвимости безопасности, требующие немедленной установки патчей. Для команд, поддерживающих собственные шлюзы, этот релиз также подчеркивает растущее расхождение в поддержке между основной веткой под управлением F5 и форком FreeNginx, развиваемым сообществом.
+  Выпуск Nginx 1.29.8 и соответствующих патчей FreeNginx устраняет критические уязвимости безопасности, которые могли поставить под угрозу веб-серверы. Для системных администраторов это подчеркивает необходимость отслеживать бюллетени безопасности даже для очень стабильного и давно работающего ПО. Рекомендуется оперативно обновить конфигурации, особенно на внешних прокси-серверах.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
+- **Docker acquires AtomicJar, a testing startup that raised $25M in January - TechCrunch**
+  Покупка компании AtomicJar (создателей Testcontainers) компанией Docker указывает на более глубокую интеграцию интеграционного тестирования в основную экосистему Docker. Для DevOps-команд эта сделка, вероятно, принесет более тесную интеграцию инструментов, но также вызывает опасения по поводу возможной монетизации инструментария, который стал стандартом для локального тестирования баз данных и сервисов.
+  [Read more](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV2VIX3Nwc081WkdZbmpFQW9qcW53MS1sRDVWaEllTVpoYkw2cGtvVUdTUG9xR0FEb0xuZktMbXZYYnRnalQxNHUtN00xTFRwRUVSRkZGcTU2U1JqWlc3RHh3dHJiSUZSTXZEUlhPXy01YXJZM0s2SWljVUpOOXR4UW9rcWxQZG13VDRkZlVvczdhUkgxUkRHYlY2c05xUnRaVDdSYXNaRzE?oc=5)
+
+- **Attackers Exploit Docker, Kubernetes Misconfigs to Breach Hosts - gbhackers.com**
+  Отчеты по безопасности указывают на активную эксплуатацию открытых демонов Docker и API-эндпоинтов Kubernetes для компрометации хост-систем. Это служит жестким напоминанием о том, что конфигурации по умолчанию никогда не должны открывать порты управления для публичного интернета без взаимной TLS-аутентификации. Полагаться исключительно на скрытие портов или базовые правила фаервола против автоматических сканеров небезопасно.
+  [Read more](https://news.google.com/rss/articles/CBMiakFVX3lxTE54a1lzelFJLTF5ODlWdlFNQzlDTzZMdlJJU2UzcTF0THIwN01jVjdCTjBwdk5DbFVxTzB2bGNtbWoyLUhGNF9SMmVoRTQwdmI2azJhM2luUlpscFhWRV9XdDlDV2k2VWhpbnc?oc=5)
+
+- **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
+  Открытый контейнерный клиент Finch от AWS улучшил инструментарий разработчика, добавив поддержку Development Containers (devcontainers) и выделенного фонового демона. Это делает Finch гораздо более жизнеспособной бесплатной альтернативой Docker Desktop для команд, стремящихся стандартизировать локальные окружения. Поддержка devcontainer закрывает серьезный функциональный пробел для разработчиков, использующих VS Code и другие современные IDE.
+  [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
+
 - **Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com**
-  Злоумышленники активно атакуют открытые вебхуки n8n для выполнения произвольного кода и доставки вредоносного ПО. Командам, самостоятельно хостящим n8n для автоматизации CI/CD или инфраструктуры, необходимо убедиться, что их инстансы закрыты от публичного доступа и защищены строгой аутентификацией и фильтрацией IP на уровне обратного прокси.
+  Всплеск кампаний по распространению вредоносного ПО через незащищенные вебхуки в самостоятельно размещаемых инстансах n8n подчеркивает риски публикации платформ автоматизации рабочих процессов. Администраторы, запускающие n8n локально или на приватных VPS, должны внедрить строгие политики аутентификации и ограничить сетевой доступ к эндпоинтам вебхуков. Неавторизованные эндпоинты следует тщательно контролировать или скрывать за API-шлюзом.
   [Read more](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5)
 
 - **GitLab Says Bye-Bye Microsoft, Moves to Google Cloud - Light Reading**
-  Миграция SaaS-платформы GitLab с Microsoft Azure на Google Cloud Platform стала одним из крупнейших инфраструктурных переходов в сфере DevOps-хостинга. Для корпоративных пользователей этот шаг обещает повышение производительности за счет глобальной сети Google, однако он также подчеркивает техническую сложность миграции многопетабайтных систем хранения Git-репозиториев с сохранением состояния.
+  Решение GitLab перенести свою основную облачную инфраструктуру с Azure на Google Cloud Platform демонстрирует изменения в конкурентоспособности облачных провайдеров для ресурсоемких SaaS-нагрузок. Для DevOps-организаций этот переход подчеркивает, как задержка сети, зрелость оркестрации контейнеров и скидки за постоянное использование продолжают стимулировать многомиллионные миграционные проекты. Это также показывает, что даже крупным платформам необходимо тщательно планировать стратегии выхода из мультиоблачных сред.
   [Read more](https://news.google.com/rss/articles/CBMioAFBVV95cUxQS0hGeHJVR2oyTnEydV9paE8yVXd3dHNuLXRPUzl4SjlKQUhTRlJCOGVQUlFoTy1TTFlLSXpyQXRVSXE5aXBQVTMxV0R0VXVGYk1NUV9yQWtKNUR4ZXNxMEJoWDVlcWNhWk5XWDd4Q2RpNEU4N2QtY3pBVzZ1ZlRjZjBrVGxIUTNpLTVNRzhKdlFvcUtOMVVVb0FOcTFKRFhQ?oc=5)
-
-- **Docker launches new business plan with changes to the Docker Desktop license - TechRepublic**
-  Обновление тарифных планов и условий лицензирования Docker Desktop продолжает увеличивать расходы компаний на инфраструктуру, заставляя платформенные команды пересматривать локальные стеки разработки. Эти изменения делают открытые альтернативы, такие как Podman, Finch или Rancher Desktop, всё более привлекательными для внедрения в масштабах всей организации.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxOWTVveUxndm96S0Z2V0Z5M0E4TEJOWUI3WEg1akU5RVRkdDhGWkpjck1XdUp4VjRpTzlJaFpQa1RmSmZYNEdxSlJOWDM4N05zMFJiSExLV2QwYmdLUXJBMFYyemtNelI4Mi1va1RwRElEalAzMGQ2TnNYNG1CTEhnaFpvRFQ5NXhrNGR0ekM2ZEczNnFUZHZYUUNLcWRXamJTZkM3N0lQQjN6NUxEd1RDUktIQm0?oc=5)
-
-- **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Открытая утилита для работы с контейнерами от AWS, Finch, получила важные обновления: поддержку Dev Containers и постоянный фоновый демон. Эти нововведения сокращают функциональный разрыв с Docker Desktop на macOS, предлагая жизнеспособную альтернативу без платных лицензий для команд, привязанных к контейнеризированным средам разработки.
-  [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
-
-- **Attackers Exploit Docker, Kubernetes Misconfigs to Breach Hosts - gbhackers.com**
-  Последние волны атак, нацеленные на неправильно настроенные сокеты Docker и API-серверы Kubernetes, напоминают о постоянных рисках публикации портов управления в интернете. Организациям необходимо провести аудит сетевых политик, чтобы убедиться, что API сред выполнения контейнеров привязаны исключительно к локальным интерфейсам или защищены с помощью VPN и mutual TLS.
-  [Read more](https://news.google.com/rss/articles/CBMiakFVX3lxTE54a1lzelFJLTF5ODlWdlFNQzlDTzZMdlJJU2UzcTF0THIwN01jVjdCTjBwdk5DbFVxTzB2bGNtbWoyLUhGNF9SMmVoRTQwdmI2azJhM2luUlpscFhWRV9XdDlDV2k2VWhpbnc?oc=5)
 
 ## Архив
 
