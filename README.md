@@ -5,30 +5,30 @@ Recent articles:
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-13
+### Свежее — 2026-07-14
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  В Nginx 1.29.8 и форке FreeNginx устранены критические уязвимости безопасности. Администраторам инфраструктуры необходимо оперативно обновить пограничные прокси-серверы для предотвращения возможных векторов удаленного выполнения кода и отказа в обслуживании. Этот релиз в очередной раз напоминает о необходимости регулярного обслуживания самостоятельно хостируемых точек входа.
+  Обновления безопасности для базовых веб-серверов требуют немедленного внимания. Версия Nginx 1.29.8 и форк FreeNginx устраняют критические уязвимости, которые могли привести к несанкционированному доступу или отказу в обслуживании. Администраторам и владельцам инфраструктуры следует оперативно проверить свои пограничные прокси-серверы и запланировать апдейты.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
-- **macOS 26: Native container support delights developers – and not just them - heise online**
-  Появление нативной поддержки контейнеров в новой версии macOS — важное событие для локальной разработки. Исключение ресурсоемкой виртуальной машины Linux, которая ранее требовалась для Docker Desktop, существенно снизит потребление памяти и повысит производительность. Это нововведение может кардинально изменить рабочие процессы инженеров на чипах Apple Silicon.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
-
 - **Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com**
-  Активная эксплуатация вебхуков в n8n подчеркивает риски публикации платформ автоматизации в сети без строгих политик доступа. Администраторам необходимо настроить аутентификацию на обратном прокси, ограничить разрешенные диапазоны IP-адресов или полностью отключить неавторизованные эндпоинты. Полагаться исключительно на сложные, скрытые URL вебхуков больше нельзя.
+  Селф-хост платформы автоматизации вроде n8n привлекают злоумышленников из-за широкого доступа к API и глубокой интеграции в системы. Данная кампания подчеркивает риски публикации вебхуков без должной верификации подписей и ограничения частоты запросов. Защита подобного промежуточного ПО с помощью строгих сетевых политик критически важна для предотвращения атак внутри контура.
   [Read more](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5)
 
+- **macOS 26: Native container support delights developers – and not just them - Heise Online**
+  Нативная поддержка контейнеров в macOS знаменует собой важный архитектурный сдвиг и отказ от использования виртуальных машин вроде Linux VM в Docker Desktop. Устранение этого промежуточного слоя значительно снижает накладные расходы на ресурсы, особенно задержки дискового ввода-вывода, которые всегда мешали разработке на Mac. Это кардинально меняет подход к выбору оборудования для разработки и инструментов виртуализации.
+  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
+
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Интеграция Dev Containers в AWS Finch и появление фонового демона делают этот инструмент полноценной открытой альтернативой Docker Desktop. Поддержка спецификации Development Container позволяет командам стандартизировать окружение без привязки к конкретному вендору. Это делает управление локальными контейнерами более практичным в рамках крупных корпоративных инфраструктур.
+  Открытый клиент контейнеризации Finch от AWS укрепляет свои позиции в качестве альтернативы Docker Desktop, добавляя поддержку dev-контейнеров и постоянный демон. Это позволяет стандартизировать среды разработки по спецификации Devcontainer без коммерческих лицензионных ограничений. Для платформенных инженеров проект предлагает более гибкий инструментарий командной строки.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
-- **Docker acquires AtomicJar, a testing startup that raised $25M in January - TechCrunch**
-  Покупка компании AtomicJar, создателя Testcontainers, со стороны Docker указывает на интеграцию процессов тестирования непосредственно в жизненный цикл контейнеров. Вероятно, Docker будет активно внедрять механизмы тестирования баз данных и зависимостей в свои десктопные и облачные инструменты. Инженерам платформ стоит следить за тем, как эта сделка повлияет на открытую лицензию Testcontainers в долгосрочной перспективе.
-  [Read more](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV2VIX3Nwc081WkdZbmpFQW9qcW53MS1sRDVWaEllTVpoYkw2cGtvVUdTUG9xR0FEb0xuZktMbXZYYnRnalQxNHUtN00xTFRwRUVSRkZGcTU2U1JqWlc3RHh3dHJiSUZSTXZEUlhPXy01YXJZM0s2SWljVUpOOXR4UW9rcWxQZG13VDRkZlVvczdhUkgxUkRHYlY2c05xUnRaVDdSYXNaRzE?oc=5)
+- **Your Mac is mistakenly flagging Docker as malware - Cult of Mac**
+  Ложные срабатывания встроенных систем безопасности ОС способны парализовать работу инженеров и запустить ложные процессы реагирования на инциденты. Проблема с macOS, по ошибке заблокировавшей легитимные бинарные файлы Docker, подчеркивает хрупкость автоматических сервисов нотариации ПО. Командам стоит прописать четкие регламенты обхода таких блокировок без ущерба для безопасности хоста.
+  [Read more](https://news.google.com/rss/articles/CBMiigFBVV95cUxNUzRlWUNlWVhjZU8wNHNNMllzZDhqN2FyTWZ4UjhlRHlETzFnbGQ1dXpnVFZldnVtbmQ3Ri1GRzJkY3NzN2NSb1JfUGNfcXB4TU40X25YTWhJYzlWMm1fa0JPSHphSXVNNFRRbzAyNGczMmlzQ29zZTdlU0FHV1VvdmlVbzYyR2YtalE?oc=5)
 
 - **GitLab Says Bye-Bye Microsoft, Moves to Google Cloud - Light Reading**
-  Миграция GitLab с Microsoft Azure на Google Cloud Platform демонстрирует сложность переноса масштабных SaaS-нагрузок между крупными облачными провайдерами. Этот шаг подтверждает, что производительность, стоимость исходящего трафика и интеграция с Kubernetes остаются ключевыми факторами при выборе инфраструктуры. Для тех, кто использует self-hosted решения, это отличный пример проектирования переносимой архитектуры.
+  Миграция GitLab из Azure в Google Cloud — это масштабный инфраструктурный проект, показывающий реальную сложность миграций между облаками. Этот шаг подчеркивает агрессивную ценовую политику Google и фокус на специализированных возможностях Kubernetes (GKE) для корпоративного SaaS. Для DevOps-специалистов это пример того, как переносить петабайты данных с минимальным временем простоя.
   [Read more](https://news.google.com/rss/articles/CBMioAFBVV95cUxQS0hGeHJVR2oyTnEydV9paE8yVXd3dHNuLXRPUzl4SjlKQUhTRlJCOGVQUlFoTy1TTFlLSXpyQXRVSXE5aXBQVTMxV0R0VXVGYk1NUV9yQWtKNUR4ZXNxMEJoWDVlcWNhWk5XWDd4Q2RpNEU4N2QtY3pBVzZ1ZlRjZjBrVGxIUTNpLTVNRzhKdlFvcUtOMVVVb0FOcTFKRFhQ?oc=5)
 
 ## Архив

@@ -143,6 +143,38 @@
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQS0hGeHJVR2oyTnEydV9paE8yVXd3dHNuLXRPUzl4SjlKQUhTRlJCOGVQUlFoTy1TTFlLSXpyQXRVSXE5aXBQVTMxV0R0VXVGYk1NUV9yQWtKNUR4ZXNxMEJoWDVlcWNhWk5XWDd4Q2RpNEU4N2QtY3pBVzZ1ZlRjZjBrVGxIUTNpLTVNRzhKdlFvcUtOMVVVb0FOcTFKRFhQ?oc=5",
           "commentary": "Миграция GitLab с Microsoft Azure на Google Cloud Platform демонстрирует сложность переноса масштабных SaaS-нагрузок между крупными облачными провайдерами. Этот шаг подтверждает, что производительность, стоимость исходящего трафика и интеграция с Kubernetes остаются ключевыми факторами при выборе инфраструктуры. Для тех, кто использует self-hosted решения, это отличный пример проектирования переносимой архитектуры."
         }
+      ],
+      "2026-07-14": [
+        {
+          "title": "Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5",
+          "commentary": "Обновления безопасности для базовых веб-серверов требуют немедленного внимания. Версия Nginx 1.29.8 и форк FreeNginx устраняют критические уязвимости, которые могли привести к несанкционированному доступу или отказу в обслуживании. Администраторам и владельцам инфраструктуры следует оперативно проверить свои пограничные прокси-серверы и запланировать апдейты."
+        },
+        {
+          "title": "Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5",
+          "commentary": "Селф-хост платформы автоматизации вроде n8n привлекают злоумышленников из-за широкого доступа к API и глубокой интеграции в системы. Данная кампания подчеркивает риски публикации вебхуков без должной верификации подписей и ограничения частоты запросов. Защита подобного промежуточного ПО с помощью строгих сетевых политик критически важна для предотвращения атак внутри контура."
+        },
+        {
+          "title": "macOS 26: Native container support delights developers – and not just them - Heise Online",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5",
+          "commentary": "Нативная поддержка контейнеров в macOS знаменует собой важный архитектурный сдвиг и отказ от использования виртуальных машин вроде Linux VM в Docker Desktop. Устранение этого промежуточного слоя значительно снижает накладные расходы на ресурсы, особенно задержки дискового ввода-вывода, которые всегда мешали разработке на Mac. Это кардинально меняет подход к выбору оборудования для разработки и инструментов виртуализации."
+        },
+        {
+          "title": "Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5",
+          "commentary": "Открытый клиент контейнеризации Finch от AWS укрепляет свои позиции в качестве альтернативы Docker Desktop, добавляя поддержку dev-контейнеров и постоянный демон. Это позволяет стандартизировать среды разработки по спецификации Devcontainer без коммерческих лицензионных ограничений. Для платформенных инженеров проект предлагает более гибкий инструментарий командной строки."
+        },
+        {
+          "title": "Your Mac is mistakenly flagging Docker as malware - Cult of Mac",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUzRlWUNlWVhjZU8wNHNNMllzZDhqN2FyTWZ4UjhlRHlETzFnbGQ1dXpnVFZldnVtbmQ3Ri1GRzJkY3NzN2NSb1JfUGNfcXB4TU40X25YTWhJYzlWMm1fa0JPSHphSXVNNFRRbzAyNGczMmlzQ29zZTdlU0FHV1VvdmlVbzYyR2YtalE?oc=5",
+          "commentary": "Ложные срабатывания встроенных систем безопасности ОС способны парализовать работу инженеров и запустить ложные процессы реагирования на инциденты. Проблема с macOS, по ошибке заблокировавшей легитимные бинарные файлы Docker, подчеркивает хрупкость автоматических сервисов нотариации ПО. Командам стоит прописать четкие регламенты обхода таких блокировок без ущерба для безопасности хоста."
+        },
+        {
+          "title": "GitLab Says Bye-Bye Microsoft, Moves to Google Cloud - Light Reading",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQS0hGeHJVR2oyTnEydV9paE8yVXd3dHNuLXRPUzl4SjlKQUhTRlJCOGVQUlFoTy1TTFlLSXpyQXRVSXE5aXBQVTMxV0R0VXVGYk1NUV9yQWtKNUR4ZXNxMEJoWDVlcWNhWk5XWDd4Q2RpNEU4N2QtY3pBVzZ1ZlRjZjBrVGxIUTNpLTVNRzhKdlFvcUtOMVVVb0FOcTFKRFhQ?oc=5",
+          "commentary": "Миграция GitLab из Azure в Google Cloud — это масштабный инфраструктурный проект, показывающий реальную сложность миграций между облаками. Этот шаг подчеркивает агрессивную ценовую политику Google и фокус на специализированных возможностях Kubernetes (GKE) для корпоративного SaaS. Для DevOps-специалистов это пример того, как переносить петабайты данных с минимальным временем простоя."
+        }
       ]
     }
   }
