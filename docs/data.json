@@ -217,6 +217,28 @@
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBVLTAxYktLcEozVC10cU9VTTUyTHQyX1ZlaDBKYjE1dThyczlmT2pmUVIxUjNFVG00emVPMWt5M3V4ODVkYVpoQ2JDMm01ZWJlLUZ0YUpSV0RYSXFvOHBKeVh4Tkx3N1lDaUpvTnNlRG9iZ2RoWElhcE53?oc=5",
           "commentary": "Запуск Docker внутри нескольких контейнеров LXC вместо одной монолитной виртуальной машины дает явные преимущества в распределении ресурсов и изоляции сбоев. LXC обеспечивает производительность, близкую к голому железу, с минимальными накладными расходами, что идеально подходит для домашних лабораторий. Тем не менее, администраторам придется внимательно настраивать драйверы хранилища и общие ресурсы ядра."
         }
+      ],
+      "2026-07-16": [
+        {
+          "title": "Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5",
+          "commentary": "Релизы Nginx 1.29.8 и FreeNginx устраняют критические уязвимости безопасности. Администраторам инфраструктуры следует оперативно обновить балансировщики нагрузки и обратные прокси, особенно те, которые принимают внешний трафик. Одновременный выпуск FreeNginx подчеркивает углубляющийся раскол между коммерческой версией от F5 и независимым форком сообщества."
+        },
+        {
+          "title": "Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5",
+          "commentary": "Злоумышленники активно используют незащищенные вебхуки n8n для выполнения произвольного кода и доставки вредоносного ПО. Это указывает на частую уязвимость self-hosted платформ автоматизации, развернутых без жесткой фильтрации IP или аутентификации. Администраторам необходимо проверить конфигурацию сети, ограничить доступ к узлам вебхуков и убедиться, что их инстансы не индексируются поисковиками."
+        },
+        {
+          "title": "GitLab thrice sued for 'misleading' investors with AI hype - The Register",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5",
+          "commentary": "GitLab столкнулся с несколькими судебными исками от акционеров, обвиняющих компанию в преувеличении коммерческой готовности и финансовой отдачи от функций искусственного интеллекта. Этот процесс отражает нарастающий скепсис рынка к заявлениям вендоров о возможностях генеративного ИИ в процессах разработки. Для корпоративных команд это повод оценивать ИИ-ассистентов по собственным метрикам продуктивности, а не по маркетинговым отчетам поставщика."
+        },
+        {
+          "title": "Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5",
+          "commentary": "Контейнерный инструмент Finch от AWS расширил экосистему, добавив поддержку сред разработки Dev Containers и представив собственный постоянно запущенный демон. Благодаря поддержке Dev Containers, Finch становится жизнеспособной open-source альтернативой Docker Desktop для управления локальными средами. Появление Finch Daemon повышает производительность выполнения контейнеров и упрощает интеграцию со сторонними инструментами."
+        }
       ]
     }
   }
