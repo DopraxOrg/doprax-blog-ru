@@ -21,31 +21,27 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-18
+### Свежее — 2026-07-19
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Релиз Nginx 1.29.8 вместе с патчами безопасности для FreeNginx подчеркивает эксплуатационные издержки продолжающегося форка проекта. Администраторам обеих веток необходимо немедленно применить эти обновления для устранения критических уязвимостей в обработке запросов. Для self-hosted инфраструктуры это лишний раз доказывает необходимость автоматических пайплайнов сборки контейнеров, позволяющих развертывать патчи зависимостей без ручного вмешательства.
+  Релизы Nginx 1.29.8 и FreeNginx устраняют несколько критических уязвимостей безопасности, которые могли привести к несанкционированному доступу или исчерпанию ресурсов. Администраторам внешних прокси-серверов необходимо уделить первоочередное внимание установке этих обновлений. Данный инцидент также подчеркивает продолжающееся разделение экосистемы Nginx, из-за которого инженерам приходится отслеживать патчи безопасности сразу в двух форках.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
 - **Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com**
-  Self-hosted платформы автоматизации вроде n8n становятся главной мишенью, если они доступны напрямую из интернета. Эта волна эксплойтов через вебхуки доказывает, что простого запуска инструментов в Docker недостаточно — необходимы правильная фильтрация входящего трафика, лимитирование запросов и сегментация сети. Организациям следует провести аудит активных сценариев n8n и ограничить доступ к конечным точкам только доверенными IP-адресами.
+  Злоумышленники активно используют уязвимые и открытые вебхуки n8n для выполнения вредоносного кода и распространения ПО. Поскольку self-hosted инструменты автоматизации часто содержат привилегированные API-ключи, незащищенные эндпоинты несут прямую угрозу внутренней сети. Командам безопасности следует внедрить строгое ограничение по IP-адресам и проверку заголовков для всех активных вебхуков.
   [Read more](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5)
 
-- **macOS 26: Native container support delights developers – and not just them - heise online**
-  Нативная поддержка контейнеров в macOS знаменует собой важный сдвиг для локальных сред разработки, которые исторически полагались на тяжелые виртуальные машины Linux. Устранение уровня виртуализации напрямую повышает производительность файловой системы, снижает нагрузку на процессор и экономит заряд батареи при локальном запуске Docker. Для команд платформы это может упростить подготовку рабочих мест разработчиков и сблизить локальные среды с продакшеном.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
+- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
+  Судебные иски от инвесторов, утверждающих, что GitLab завысила финансовые ожидания от внедрения ИИ, подчеркивают общую коррекцию рынка инструментов разработки. Организациям, тестирующим CI/CD платформы с ИИ-ассистентами, следует ориентироваться на внутренние метрики эффективности, а не на обещания поставщиков. Исход этих разбирательств может заставить вендоров быть более прозрачными в оценке возможностей ИИ-инструментов для разработчиков.
+  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
 
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Благодаря поддержке Dev Containers и новому демону AWS Finch превращается в жизнеспособную open-source альтернативу Docker Desktop. Отказ от проприетарного лицензирования настольных приложений в пользу тесной интеграции с открытыми стандартами контейнеризации позволяет энтерпрайз-командам избежать юридических сложностей. Инженерам инфраструктуры это дает легковесный инструмент управления контейнерами с упором на интерфейс командной строки.
+  Добавление поддержки сред разработки (Dev Containers) и фонового демона в AWS Finch укрепляет его позиции как полноценной альтернативы Docker Desktop. Для корпоративных команд, стремящихся сократить затраты на лицензии в macOS и Windows, проект предлагает зрелую опенсорсную альтернативу. Это обновление закрывает ключевой пробел в удобстве работы для команд, чьи процессы завязаны на контейнеры разработки.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
-- **9 Open-Source AI Coding Agents Worth Self-Hosting - Security Boulevard**
-  Запуск open-source AI-агентов для написания кода локально или на приватных VPS-серверах обеспечивает безопасность интеллектуальной собственности без отправки данных сторонним API. Тем не менее, self-hosting таких инструментов требует тщательного планирования ресурсов, поскольку генерация кода в реальном времени требует выделенных GPU или оптимизированного квантования. SRE-инженерам придется сопоставлять стоимость собственной инфраструктуры с преимуществами низкой задержки и соответствия комплаенсу.
-  [Read more](https://news.google.com/rss/articles/CBMikgFBVV95cUxOM21faE9ldDU0Y0pOdjlmWGtMR19RWUFBSzk0bHNNWVg1TWl0aTJqYTdRUXJFaUZmVHg3RlFxVnA5QUZHUnY1Uk5NdnpkTE0xc2poNUp2ZlFVeV9RN1lTUFBsSUpncUFqeHJVSkZNb2pDV05LN0FFS21MU05LSkROZWl2R0lmWWFiSXdnVi1EMzRWZw?oc=5)
-
-- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Иски акционеров против GitLab из-за преувеличения возможностей искусственного интеллекта отражают растущий скептицизм рынка по отношению к раздуванию функционала вендорами. Покупатели DevOps-решений все чаще отдают приоритет стабильности платформы, скорости работы CI/CD-раннеров и предсказуемости цен, а не навязанным генеративным функциям. Это сопротивление показывает, что инфраструктурным командам следует продолжать оценивать инструменты по фундаментальным метрикам производительности, а не по маркетинговым планам.
-  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
+- **Your Mac is mistakenly flagging Docker as malware - Cult of Mac**
+  Недавнее обновление macOS ошибочно классифицировало исполняемые файлы Docker как вредоносное ПО, заблокировав работу локальных сред разработки. Хотя временные решения уже найдены, инцидент показывает уязвимость рабочих процессов разработчиков перед политиками безопасности операционных систем. Платформенным инженерам стоит подготовить четкие инструкции на случай подобных сбоев авторизации кода, чтобы минимизировать простой команд.
+  [Read more](https://news.google.com/rss/articles/CBMiigFBVV95cUxNUzRlWUNlWVhjZU8wNHNNMllzZDhqN2FyTWZ4UjhlRHlETzFnbGQ1dXpnVFZldnVtbmQ3Ri1GRzJkY3NzN2NSb1JfUGNfcXB4TU40X25YTWhJYzlWMm1fa0JPSHphSXVNNFRRbzAyNGczMmlzQ29zZTdlU0FHV1VvdmlVbzYyR2YtalE?oc=5)
 
 ## Архив
 

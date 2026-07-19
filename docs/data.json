@@ -313,6 +313,33 @@
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5",
           "commentary": "Иски акционеров против GitLab из-за преувеличения возможностей искусственного интеллекта отражают растущий скептицизм рынка по отношению к раздуванию функционала вендорами. Покупатели DevOps-решений все чаще отдают приоритет стабильности платформы, скорости работы CI/CD-раннеров и предсказуемости цен, а не навязанным генеративным функциям. Это сопротивление показывает, что инфраструктурным командам следует продолжать оценивать инструменты по фундаментальным метрикам производительности, а не по маркетинговым планам."
         }
+      ],
+      "2026-07-19": [
+        {
+          "title": "Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5",
+          "commentary": "Релизы Nginx 1.29.8 и FreeNginx устраняют несколько критических уязвимостей безопасности, которые могли привести к несанкционированному доступу или исчерпанию ресурсов. Администраторам внешних прокси-серверов необходимо уделить первоочередное внимание установке этих обновлений. Данный инцидент также подчеркивает продолжающееся разделение экосистемы Nginx, из-за которого инженерам приходится отслеживать патчи безопасности сразу в двух форках."
+        },
+        {
+          "title": "Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5",
+          "commentary": "Злоумышленники активно используют уязвимые и открытые вебхуки n8n для выполнения вредоносного кода и распространения ПО. Поскольку self-hosted инструменты автоматизации часто содержат привилегированные API-ключи, незащищенные эндпоинты несут прямую угрозу внутренней сети. Командам безопасности следует внедрить строгое ограничение по IP-адресам и проверку заголовков для всех активных вебхуков."
+        },
+        {
+          "title": "GitLab thrice sued for 'misleading' investors with AI hype - The Register",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5",
+          "commentary": "Судебные иски от инвесторов, утверждающих, что GitLab завысила финансовые ожидания от внедрения ИИ, подчеркивают общую коррекцию рынка инструментов разработки. Организациям, тестирующим CI/CD платформы с ИИ-ассистентами, следует ориентироваться на внутренние метрики эффективности, а не на обещания поставщиков. Исход этих разбирательств может заставить вендоров быть более прозрачными в оценке возможностей ИИ-инструментов для разработчиков."
+        },
+        {
+          "title": "Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5",
+          "commentary": "Добавление поддержки сред разработки (Dev Containers) и фонового демона в AWS Finch укрепляет его позиции как полноценной альтернативы Docker Desktop. Для корпоративных команд, стремящихся сократить затраты на лицензии в macOS и Windows, проект предлагает зрелую опенсорсную альтернативу. Это обновление закрывает ключевой пробел в удобстве работы для команд, чьи процессы завязаны на контейнеры разработки."
+        },
+        {
+          "title": "Your Mac is mistakenly flagging Docker as malware - Cult of Mac",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUzRlWUNlWVhjZU8wNHNNMllzZDhqN2FyTWZ4UjhlRHlETzFnbGQ1dXpnVFZldnVtbmQ3Ri1GRzJkY3NzN2NSb1JfUGNfcXB4TU40X25YTWhJYzlWMm1fa0JPSHphSXVNNFRRbzAyNGczMmlzQ29zZTdlU0FHV1VvdmlVbzYyR2YtalE?oc=5",
+          "commentary": "Недавнее обновление macOS ошибочно классифицировало исполняемые файлы Docker как вредоносное ПО, заблокировав работу локальных сред разработки. Хотя временные решения уже найдены, инцидент показывает уязвимость рабочих процессов разработчиков перед политиками безопасности операционных систем. Платформенным инженерам стоит подготовить четкие инструкции на случай подобных сбоев авторизации кода, чтобы минимизировать простой команд."
+        }
       ]
     }
   }
