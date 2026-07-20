@@ -340,6 +340,28 @@
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUzRlWUNlWVhjZU8wNHNNMllzZDhqN2FyTWZ4UjhlRHlETzFnbGQ1dXpnVFZldnVtbmQ3Ri1GRzJkY3NzN2NSb1JfUGNfcXB4TU40X25YTWhJYzlWMm1fa0JPSHphSXVNNFRRbzAyNGczMmlzQ29zZTdlU0FHV1VvdmlVbzYyR2YtalE?oc=5",
           "commentary": "Недавнее обновление macOS ошибочно классифицировало исполняемые файлы Docker как вредоносное ПО, заблокировав работу локальных сред разработки. Хотя временные решения уже найдены, инцидент показывает уязвимость рабочих процессов разработчиков перед политиками безопасности операционных систем. Платформенным инженерам стоит подготовить четкие инструкции на случай подобных сбоев авторизации кода, чтобы минимизировать простой команд."
         }
+      ],
+      "2026-07-20": [
+        {
+          "title": "Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5",
+          "commentary": "Одновременные релизы безопасности Nginx 1.29.8 и FreeNginx устраняют уязвимости, которые могут поставить под угрозу маршрутизацию на границе сети. Для команд, самостоятельно хостящих инфраструктуру, своевременное обновление обратных прокси-серверов критично для предотвращения контрабанды запросов или исчерпания ресурсов. Администраторам следует изучить список изменений и запланировать обновление, особенно при использовании HTTP/2 или сложных конфигураций потоков."
+        },
+        {
+          "title": "GitLab thrice sued for 'misleading' investors with AI hype - The Register",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5",
+          "commentary": "Иски против GitLab из-за предполагаемого завышения возможностей ИИ подчеркивают растущий разрыв между маркетингом вендоров и реальной ценностью инструментов для платформенной инженерии. Для команд разработки и эксплуатации это напоминание о необходимости оценивать ИИ-ассистенты по конкретным метрикам производительности, а не по обещаниям из дорожных карт. Использование непроверенных функций при планировании ресурсов по-прежнему несет высокие риски."
+        },
+        {
+          "title": "Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5",
+          "commentary": "Эксплуатация вебхуков n8n для распространения вредоносного ПО подчеркивает риски безопасности при публикации селф-хостинг платформ автоматизации в интернете без жесткого контроля доступа. DevOps-инженерам, администрирующим такие инстансы, необходимо настроить лимиты на частоту запросов, валидацию входящих данных и изоляцию воркеров. Ограничение доступа к вебхукам только доверенными диапазонами IP-адресов — обязательный шаг для защиты инфраструктуры."
+        },
+        {
+          "title": "Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5",
+          "commentary": "AWS расширяет возможности своего клиента контейнеризации Finch с открытым исходным кодом, добавляя нативную поддержку демона и интеграцию с Dev Containers, что делает его сильной альтернативой Docker Desktop. Для команд, работающих на macOS или Windows, это позволяет уйти от проприетарного лицензирования без потери совместимости со стандартными сценариями Docker Compose. Появление постоянного демона упрощает локальное тестирование CI/CD и управление жизненным циклом контейнеров."
+        }
       ]
     }
   }
