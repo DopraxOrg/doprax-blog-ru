@@ -5,31 +5,27 @@ Recent articles:
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-21
+### Свежее — 2026-07-22
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Выпуск Nginx 1.29.8 и FreeNginx устраняет критические уязвимости безопасности, которые могут поставить под угрозу веб-серверы. Для команд эксплуатации это очередной повод наладить автоматическое обновление граничных прокси-серверов. Рекомендуется как можно скорее обновить инсталляции, чтобы исключить риски удаленного выполнения кода или отказа в обслуживании.
+  Критические обновления безопасности для Nginx и FreeNginx устраняют уязвимости, способные привести к повреждению памяти или отказу в обслуживании при определенных конфигурациях запросов. Продакшен-окружениям на базе граничных прокси и ингресс-контроллеров следует оперативно обновить версии или проверить блокирующие директивы. Ожидание пакетов из дистрибутивов часто затягивает патчинг, поэтому для периметра лучше отслеживать апстрим-релизы напрямую.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
-- **Docker acquires AtomicJar, a testing startup that raised $25M in January - TechCrunch**
-  Покупка компании AtomicJar (создателей Testcontainers) компанией Docker указывает на курс к более тесной интеграции баз данных и внешних сервисов в локальную среду разработки. Этот шаг призван стандартизировать интеграционное тестирование как на машинах разработчиков, так и в CI-конвейерах. Ожидается появление более нативных инструментов тестирования внутри экосистемы Docker.
-  [Read more](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV2VIX3Nwc081WkdZbmpFQW9qcW53MS1sRDVWaEllTVpoYkw2cGtvVUdTUG9xR0FEb0xuZktMbXZYYnRnalQxNHUtN00xTFRwRUVSRkZGcTU2U1JqWlc3RHh3dHJiSUZSTXZEUlhPXy01YXJZM0s2SWljVUpOOXR4UW9rcWxQZG13VDRkZlVvczdhUkgxUkRHYlY2c05xUnRaVDdSYXNaRzE?oc=5)
-
 - **Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com**
-  Злоумышленники активно эксплуатируют открытые или плохо защищенные вебхуки n8n для распространения вредоносного ПО. Для тех, кто хостит платформы автоматизации самостоятельно, это серьезное напоминание о необходимости закрывать такие инструменты VPN или обратным прокси с жестким контролем доступа. Защита конечных точек вебхуков с помощью белых списков IP или проверки подписей обязательна для предотвращения несанкционированного запуска.
+  Незащищенные вебхуки в n8n стали объектом активных атак для выполнения произвольных команд и внедрения вредоносного ПО в self-hosted окружениях. Движки автоматизации рабочих процессов требуют обязательной аутентификации по API-ключам, сетевой изоляции и жесткой фильтрации исходящего трафика. Доступность эндпоинтов оркестрации без авторизации превращает инструменты DevOps-автоматизации в прямую точку входа для злоумышленников.
   [Read more](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5)
 
-- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Иски инвесторов против GitLab из-за завышения ожиданий от ИИ-функций подчеркивают разрыв между маркетинговыми обещаниями и эксплуатационной реальностью в DevSecOps-платформах. В то время как генеративный ИИ активно продвигается, для инфраструктурных команд приоритетом остаются стабильность, безопасность и предсказуемость затрат. Организациям стоит тщательно оценивать реальную окупаемость и риски безопасности ИИ-функций перед переходом на более дорогие тарифы.
-  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
-
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Проект Finch от Amazon активно развивается, получив улучшенную поддержку dev-контейнеров и собственный демон, что делает его жизнеспособной open-source альтернативой Docker Desktop. Это обновление особенно актуально для команд, стремящихся стандартизировать среды разработки на macOS и Windows без лицензионных затрат. Поддержка dev-контейнеров позволяет легко и просто интегрировать его в рабочие процессы современных IDE.
+  AWS расширяет возможности своего контейнерного движка Finch, добавляя фоновый демон и нативную поддержку спецификации Dev Containers на macOS и Linux. Это приближает Finch к функциональности Docker Desktop для локальной разработки, но без коммерческих лицензионных ограничений. Стандартизация контейнерных сред разработки на основе открытых спецификаций ускоряет онбординг инженеров и синхронизирует инструментарий между локальными машинами и CI-пайплайнами.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
-- **Docker launches new business plan with changes to the Docker Desktop license - TechRepublic**
-  Изменения в коммерческих планах и политике лицензирования Docker Desktop продолжают подталкивать корпоративные команды к поиску альтернативных сред исполнения. Организациям необходимо провести аудит окружений разработчиков для соблюдения комплаенса или спланировать миграцию на Podman, Finch или Rancher Desktop. Данный сдвиг показывает, как проприетарное лицензирование локального инструментария может нарушить привычные процессы платформенной инженерии.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxOWTVveUxndm96S0Z2V0Z5M0E4TEJOWUI3WEg1akU5RVRkdDhGWkpjck1XdUp4VjRpTzlJaFpQa1RmSmZYNEdxSlJOWDM4N05zMFJiSExLV2QwYmdLUXJBMFYyemtNelI4Mi1va1RwRElEalAzMGQ2TnNYNG1CTEhnaFpvRFQ5NXhrNGR0ekM2ZEczNnFUZHZYUUNLcWRXamJTZkM3N0lQQjN6NUxEd1RDUktIQm0?oc=5)
+- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
+  Коллективные иски против GitLab отражают растущее внимание к вендорам корпоративного ПО, завышающим оценки финансового эффекта от внедрения ИИ-функций. Для инженерных команд это сигнал оценивать ИИ-помощники по реальным метрикам пайплайнов и скорости ревью, а не по маркетинговым обещаниям. Выбор платформ должен опираться на надежность SCM, производительность CI/CD и совокупную стоимость владения.
+  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
+
+- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
+  Moro Hub и Rafay запускают специализированную GPU PaaS-инфраструктуру в Дубае для локальных ИИ-нагрузок. Управляемый Kubernetes и оркестрация GPU-кластеров упрощают выделение ресурсов и управление аппаратным стеком при обучении и инференсе моделей. Появление региональных GPU PaaS отвечает запросу на суверенитет данных в сочетании с автоматизацией облачно-нативной инфраструктуры.
+  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
 
 ## Архив
 
