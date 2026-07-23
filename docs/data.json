@@ -421,7 +421,8 @@
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5",
           "commentary": "Moro Hub и Rafay запускают специализированную GPU PaaS-инфраструктуру в Дубае для локальных ИИ-нагрузок. Управляемый Kubernetes и оркестрация GPU-кластеров упрощают выделение ресурсов и управление аппаратным стеком при обучении и инференсе моделей. Появление региональных GPU PaaS отвечает запросу на суверенитет данных в сочетании с автоматизацией облачно-нативной инфраструктуры."
         }
-      ]
+      ],
+      "2026-07-23": []
     }
   }
 }
