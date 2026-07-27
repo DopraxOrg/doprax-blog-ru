@@ -5,35 +5,31 @@ Recent articles:
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-26
-
-- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
-  Локальный запуск автономных ИИ-агентов несет серьезные риски для безопасности при отсутствии строгой изоляции файловой системы и сети. Интеграция NanoClaw с Docker обеспечивает временные песочницы и явные права на исполнение для агентов. Это защищает хостовую инфраструктуру от скомпрометированных или вредоносных сценариев.
-  [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
+### Свежее — 2026-07-27
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Обе ветки, основной Nginx и FreeNginx, получили критические обновления безопасности, устраняющие уязвимости в обработке HTTP и управлении памятью. Администраторам обратных прокси и краевых узлов следует обновить бинарные файлы в приоритетном порядке для предотвращения удаленного выполнения кода и DoS-атак. Автоматизация пропатчивания веб-серверов остается базовым требованием к безопасности.
+  Внеочередные обновления безопасности для Nginx и форка FreeNginx напоминают о рисках задержек при патчинге краевых прокси. Для инженеров это прямой повод автоматизировать обновление базовых образов и сервисов, не дожидаясь медленных апдейтов из дистрибутивов OS.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
-- **ADK for Java opening up to third-party language models via LangChain4j integration - blog.google**
-  Google отвязывает свой Java Agent Development Kit от исключительно проприетарных эндпоинтов Gemini с помощью интеграции с LangChain4j. Это позволяет Java-разработчикам менять провайдеров моделей или подключать локальный инференс без переписывания основной логики приложений. Снижение зависимости от одного вендора на уровне фреймворка делает архитектуру надежнее.
-  [Read more](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSEtEVXNEMFpseHhmNzV1X3NjemZkcHBTd183YS1aV1VWMXJYZXJwaWVIT1VxMHZ4Mmp2YllWOTQweDFqb0t0ZlV1aHV0ZVhKUmp4RjN4ZGtfMU1tRG4zZ0trTENEM3lWNWJoZkc2TTIxLVE0Ri16X055X3lZWHdzSGR5RnJ3ODg0N05zN2VyRGl1bmJ5RVlpdlRnZURtOUVjZkVnaDZkLWdqa1ZJenZYbUxWZ2oyeEQ3?oc=5)
-
-- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
-  Провайдеры облачных услуг все чаще используют платформы оркестрации на базе Kubernetes, такие как Rafay, для управления высокоплотными GPU-кластерами под ИИ-нагрузки. Формат специализированного PaaS снижает операционную сложность работы с bare-metal GPU, многопользовательским планированием и обновлениями драйверов. Это показывает, как оркестрация инфраструктуры адаптируется к работе с ускорителями как с первыми гражданами системы.
-  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
-
 - **Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com**
-  Неаутентифицированные вебхуки в self-hosted экземплярах n8n активно атакуются для выполнения произвольных команд и внедрения вредоносного ПО. Защита таких платформ автоматизации требует обязательной аутентификации на уровне ингресса или размещения вебхуков за API-шлюзами вместо прямой публикации в сеть. Удобство автоматизации не должно идти в ущерб периметру безопасности.
+  Открытие доступа к self-hosted системам автоматизации вроде n8n из внешней сети без жесткого контроля входящего трафика создает огромный вектор атак. Вебхуки необходимо изолировать за обратным прокси с ограничением запросов и обязательной валидацией подписей.
   [Read more](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5)
 
+- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
+  Коллективные иски из-за преувеличения возможностей ИИ показывают растущий скептицизм инвесторов и пользователей к заявлениям вендоров. Инженерным командам стоит оценивать DevOps-инструменты с ИИ на основе реальных метрик продуктивности, а не маркетинговых обещаний.
+  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
+
+- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
+  Интеграция фреймворков ИИ-агентов напрямую в изолированные контейнеры решает важнейшую задачу безопасности при запуске ненадежного кода. Для платформ, исполняющих автономные агенты, границы контейнеров остаются понятным и надежным средством ограничения зоны поражения.
+  [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
+
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  AWS развивает Finch из простой утилиты командной строки в фоновый демон с прямой поддержкой спецификации Dev Containers. Это дает командам на macOS и Linux открытую альтернативу Docker Desktop для локального контейнерного окружения без лицензионных ограничений и лишних накладных расходов. Стандартизация вокруг Dev Containers делает локальные среды разработки более переносимыми.
+  Расширение поддержки dev containers в опенсорсных движках вроде Finch дает полноценную альтернативу Docker Desktop на рабочих станциях. Стандартизация на спецификации Dev Container помогает синхронизировать локальную разработку с CI/CD без привязки к конкретному вендору.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
-- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Коллективные иски к GitLab подчеркивают увеличивающийся разрыв между маркетингом ИИ-функций и их реальным внедрением в корпоративном секторе. Платформы, встраивающие генеративный ИИ в CI/CD-пайплайны, сталкиваются с жестким контролем, когда новые возможности не дают измеримого прироста производительности. Руководители инфраструктуры требуют доказанного ROI вместо экспериментальных ИИ-дополнений.
-  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
+- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
+  Появление региональных сервисов GPU PaaS отражает смещение спроса с обычных облачных вычислений на специализированную инфраструктуру для ИИ. Управление GPU-нагрузками через абстракции Kubernetes упрощает развертывание для команд, которым нужна предсказуемая производительность вне гиперскейлеров.
+  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
 
 ## Архив
 
