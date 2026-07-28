@@ -21,31 +21,31 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-27
+### Свежее — 2026-07-28
+
+- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
+  Платформы автоматизации процессов вроде n8n становятся приоритетной мишенью для атак из-за широких прав доступа и возможности выполнения кода. Побег из песочницы с выполнением произвольных команд ОС на хосте подчеркивает риски селф-хостинга средств автоматизации без строгой изоляции процессов или рутлес-контейнеризации.
+  [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Внеочередные обновления безопасности для Nginx и форка FreeNginx напоминают о рисках задержек при патчинге краевых прокси. Для инженеров это прямой повод автоматизировать обновление базовых образов и сервисов, не дожидаясь медленных апдейтов из дистрибутивов OS.
+  Критические патчи безопасности, выпущенные одновременно для Nginx и форка FreeNginx, — повод срочно проверить граничные прокси. Отсутствие обновлений на реверс-прокси подвергает внутреннюю сеть рискам расщепления HTTP-запросов и RCE, поэтому оперативная установка патчей критически важна.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
-- **Hackers Exploit n8n Webhooks to Spread Malware - gbhackers.com**
-  Открытие доступа к self-hosted системам автоматизации вроде n8n из внешней сети без жесткого контроля входящего трафика создает огромный вектор атак. Вебхуки необходимо изолировать за обратным прокси с ограничением запросов и обязательной валидацией подписей.
-  [Read more](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpM1pWZHdoWjA5Q090bWpzQURXSmR2NVZXVzNsNTdacnpxeTlRWTVBVEx2STdBcFVmWjhZZGNNUUJxcDJpRjU4QkNKUExIcVB4am93Tg?oc=5)
-
 - **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Коллективные иски из-за преувеличения возможностей ИИ показывают растущий скептицизм инвесторов и пользователей к заявлениям вендоров. Инженерным командам стоит оценивать DevOps-инструменты с ИИ на основе реальных метрик продуктивности, а не маркетинговых обещаний.
+  Коллективные иски с обвинениями GitLab в завышении обещаний инвесторам относительно ИИ-функций отражают растущий скептицизм к маркетингу Enterprise AI. Вендоры платформ, преувеличивающие возможности ИИ, рискуют потерять доверие инженеров, так и не предоставив реального прироста производительности в CI/CD.
   [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
 
-- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
-  Интеграция фреймворков ИИ-агентов напрямую в изолированные контейнеры решает важнейшую задачу безопасности при запуске ненадежного кода. Для платформ, исполняющих автономные агенты, границы контейнеров остаются понятным и надежным средством ограничения зоны поражения.
-  [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
-
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Расширение поддержки dev containers в опенсорсных движках вроде Finch дает полноценную альтернативу Docker Desktop на рабочих станциях. Стандартизация на спецификации Dev Container помогает синхронизировать локальную разработку с CI/CD без привязки к конкретному вендору.
+  AWS расширяет открытый контейнерный движок Finch, добавляя поддержку демона и спецификации Dev Containers для полноценной замены Docker Desktop. Для команд на macOS и Linux в экосистеме AWS это снижает зависимость от проприетарного ПО, сохраняя привычные процессы контейнеризации.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
-- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
-  Появление региональных сервисов GPU PaaS отражает смещение спроса с обычных облачных вычислений на специализированную инфраструктуру для ИИ. Управление GPU-нагрузками через абстракции Kubernetes упрощает развертывание для команд, которым нужна предсказуемая производительность вне гиперскейлеров.
-  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
+- **IT leaders prioritise AI over infrastructure as code - IT Brief UK**
+  Смещение приоритетов с базовых инструментов Infrastructure as Code в сторону ИИ-инициатив создает риски накопления технического долга. Пренебрежение автоматизацией инфраструктуры ради быстрого внедрения ИИ приводит к фрагментации сред и неконтролируемому росту расходов на облака.
+  [Read more](https://news.google.com/rss/articles/CBMihwFBVV95cUxOaFUwaV9YYTZ5MW9FZmp3Uk42YjNXRU9DRHYybWJ1MS1WNHVxZjA2eTIxZzF5ajhfZDZHLVBoN2ZsVXVYY1M2b2wtdmtvR2V4Zno5d3QyQUQ3QnVyQlVKM2Jrd2gyT2lBTF9sbm5BQXFPZ3otSlhCMFVKRHBBc2kxREo2SElXSnM?oc=5)
+
+- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
+  По мере того как автономные ИИ-агенты получают больше прав на выполнение кода, их изоляция внутри контейнеров становится обязательной. Прямая интеграция Docker в рантайм агентов обеспечивает четкие границы безопасности, предотвращая несанкционированные изменения системы и утечки данных.
+  [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
 
 ## Архив
 
