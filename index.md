@@ -21,31 +21,31 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-07-29
+### Свежее — 2026-07-30
 
 - **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Возможность обхода JS-песочницы позволяет редакторам сценариев выполнять системные команды с правами основного процесса n8n, полностью лишая изоляции рабочие задачи на хосте. Командам, использующим self-hosted инстансы n8n, следует ограничить права редакторов и изолировать сетевой доступ к сервису до установки обновлений. Запуск воркеров в непривилегированных одноразовых контейнерах остается надежным способом предотвратить захват сервера при исполнении вредоносных сценариев.
+  Уязвимость выхода из «песочницы» в n8n позволяет пользователям с правами редактирования пайплайнов выполнять произвольные системные команды с правами процесса n8n. Злоумышленники уже активно атакуют открытые вебхуки и эндпоинты без аутентификации, превращая доступные извне инстансы в узлы для запуска вредоносного ПО. Командам, самостоятельно хостящим n8n, необходимо срочно ограничить доступ внутри изолированных сетей, включить обязательную аутентификацию и обновиться до пропатченного релиза.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
+- **IT leaders prioritise AI over infrastructure as code - IT Brief UK**
+  Перераспределение корпоративных бюджетов в пользу развертывания LLM и AI-инфраструктуры сокращает финансирование проектов по разработке платформ и Infrastructure as Code. Хотя автоматизация на базе ИИ обещает быстрые результаты, снижение внимания к IaC ведет к накоплению технического долга и потере воспроизводимости в мультиклауд-средах. Платформенным командам необходимо четко обосновывать ROI декларативного подхода, чтобы сохранить стандарты при росте ИИ-нагрузок.
+  [Read more](https://news.google.com/rss/articles/CBMihwFBVV95cUxOaFUwaV9YYTZ5MW9FZmp3Uk42YjNXRU9DRHYybWJ1MS1WNHVxZjA2eTIxZzF5ajhfZDZHLVBoN2ZsVXVYY1M2b2wtdmtvR2V4Zno5d3QyQUQ3QnVyQlVKM2Jrd2gyT2lBTF9sbm5BQXFPZ3otSlhCMFVKRHBBc2kxREo2SElXSnM?oc=5)
+
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Устранение критических уязвимостей в основном дистрибутиве Nginx и форке FreeNginx требует оперативного обновления граничных прокси и ingress-контроллеров. Необновленные обратные прокси подвергают внутреннюю сеть рискам подмены запросов, переполнения буфера или атак на отказ в обслуживании на периметре. Инженерам рекомендуется проверить бинарные сигнатуры и протестировать новые образы на staging-контурах, чтобы исключить сбои в конфигурациях проксирования.
+  Свежие релизы Nginx и FreeNginx устраняют критические уязвимости в обработке запросов и работе с памятью при определенных конфигурациях. Внеплановые обновления граничных прокси требуют тщательной проверки, особенно в инфраструктурах с высокой нагрузкой или кастомными модулями C. Администраторам следует изучить ченджлог на предмет изменений в реализации HTTP/2 перед раскаткой обновления на продакшен.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
+- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
+  Moro Hub и Rafay объявили о запуске локальной GPU PaaS-платформы, ориентированной на региональные компании с требованиями к цифровому суверенитету при обучении ИИ-моделей. Управляемый GPU PaaS упрощает выделение ресурсов, изолируя сложность управления драйверами, оркестрации CUDA и планирования задач в мультитенантной среде. Для эксплуатационных команд такие сервисы снижают затраты на обслуживание кластеров и обеспечивают соблюдение законов о локализации данных.
+  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
+
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Добавление нативной поддержки dev-контейнеров и отдельного демона в Finch укрепляет позиции опенсорсной альтернативы Docker Desktop для рабочих станций. Интеграция упрощает настройку локального окружения при работе со сложными инструментами, сохраняя управление контейнерами открытым и бесплатным. Использование стандартизированных dev-контейнеров минимизирует расхождения между локальной разработкой и средой сборки в CI/CD.
+  AWS обновила свой опенсорсный контейнерный движок Finch, добавив нативную поддержку спецификации Dev Containers и изолированного фонового демона. Это предоставляет разработчикам на macOS и Linux полноценную альтернативу Docker Desktop без лицензионных ограничений и привязки к вендору. Интеграция с локальными конфигурациями devcontainer упрощает стандартизацию контейнеризованной среды разработки в инженерных командах.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
 - **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Коллективные иски из-за завышенных обещаний в сфере ИИ подсвечивают разрыв между маркетингом вендоров и реальным приростом производительности в DevOps-инструментах. Корпоративным командам, внедряющим ИИ в CI/CD, стоит оценивать генерацию кода и автоматическую триажирование по метрикам эффективности, а не по запевкам продавцов. Зависимость от непроверенных ИИ-функций рискует раздуть бюджеты на лицензии без ощутимого ускорения пайплайнов.
+  Коллективные иски против GitLab утверждают, что компания преувеличила готовность и степень внедрения своих ИИ-функций в enterprise-сегменте. Для инженеров, выбирающих DevOps-платформы, это подчеркивает разрыв между маркетинговыми заявлениями об ИИ-инструментах и их реальной пользой в продакшен-пайплайнах. При выборе платформ поставки ПО стоит опираться на конкретные метрики и результаты пилотов, а не на обещания вендоров.
   [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
-
-- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
-  Изоляция автономных ИИ-агентов внутри контейнеров Docker создает необходимые границы выполнения при запуске непроверенного кода или команд оболочки. Без контейнерных ограничений инструменты автоматического написания кода могут случайно изменить конфигурацию хоста или скомпрометировать секреты. Применение жестких лимитов ресурсов и сетевых политик для контейнеров агентов предотвращает перерастание ошибок ИИ в инциденты на инфраструктурном уровне.
-  [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
-
-- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
-  Развертывание автоматизированной оркестрации Kubernetes для GPU-нагрузок на региональной инфраструктуре решает проблему управления аппаратными ИИ-ускорителями. Использование GPU PaaS снижает издержки на менеджмент драйверов, автомасштабирование кластеров и разделение ресурсов между командами. Размещение процессов дообучения моделей на управляемых GPU-кластерах обеспечивает контроль над данными и затратами по сравнению с публичными SaaS API.
-  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
 
 ## Архив
 
