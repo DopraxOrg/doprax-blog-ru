@@ -21,30 +21,30 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-04
+### Свежее — 2026-08-05
 
-- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Уязвимость с выходом из песочницы в n8n позволяет пользователям с правами редактирования рабочих процессов выполнять произвольные команды ОС в контексте основного процесса n8n. Для команд, разворачивающих n8n в мультитенантных средах или публично открывающих вебхуки, изоляция процессов и строгий RBAC становятся критически важными для защиты хоста.
+- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - thehackernews.com**
+  Уязвимость с выходом из песочницы в n8n наглядно показывает риски использования low-code платформ автоматизации, исполняющих динамический код в изолированной инфраструктуре. При отсутствии жесткой сетевой изоляции доступ к редактору сценариев или вебхукам позволяет злоумышленнику перейти от уровня приложения к исполнению команд внутри контейнера. Для self-hosted установок критически важно ограничивать привилегии процесса и фильтровать исходящий трафик на уровне файрвола.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
-  Одновременные обновления безопасности для Nginx и FreeNginx устраняют критические уязвимости в обработке запросов и работе с памятью. Администраторам, использующим собственные сборки или граничные прокси-серверы, следует оперативно обновить базовые образы и бинарные файлы во избежание угроз RCE и DoS.
+  Одновременный релиз патчей безопасности для Nginx и FreeNginx указывает на исправление критических уязвимостей в разборе запросов или работе с памятью. Поскольку реверс-прокси находится на внешнем контуре, задержка с обновлением создает риски контрабанды запросов или отказа в обслуживании всей инфраструктуры. Командам, использующим собственные сборки или базовые контейнерные образа, стоит оперативно обновить версии компонентов.
   [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
-- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Групповые иски против GitLab подчёркивают растущие юридические и финансовые риски, связанные с завышенными обещаниями вокруг AI-возможностей. Для руководителей инфраструктуры это лишнее напоминание о необходимости оценивать AI-инструменты вендоров по реальной пользе, а не по маркетинговым обещаниям.
-  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
-
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  AWS расширяет возможности Finch, добавляя нативную поддержку Dev Containers и режим фонового демона для управления контейнерами на macOS и Linux. Превращение Finch в полноценную альтернативу Docker Desktop укрепляет позиции опенсорсного инструментария на корпоративных рабочих станциях со строгими требованиями к лицензированию.
+  Поддержка dev containers и фонового демона в AWS Finch делает его полноценной открытой альтернативой Docker Desktop на macOS и Linux. Стандартизация окружения разработки через CLI-инструмент упрощает работу платформных команд по сопровождению облачных пайплайнов. Это также подтверждает тренд на переход к открытым спецификациям контейнеризации вместо проприетарных утилит.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
-- **macOS 26: Native container support delights developers – and not just them - Heise Online**
-  Нативная виртуализация контейнеров в macOS предоставляет легкую среду выполнения непосредственно на уровне ОС, избавляя от накладных расходов традиционных виртуальных машин Linux. Это существенно снижает потребление оперативной памяти и задержки запуска при локальной разработке на процессорах Apple Silicon.
+- **macOS 26: Native container support delights developers – and not just them - heise online**
+  Нативная поддержка контейнеров в macOS устраняет избыточные накладные расходы виртуализации, присущие Docker Desktop или Lima. Запуск контейнеров через механизмы операционной системы ускоряет ввод-вывод и экономит ресурсы процессоров Apple Silicon. Для платформенных инженеров это существенно сокращает разрыв в производительности между локальной средой разработки и продакшеном на Linux.
   [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
 
-- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
-  Партнерство Moro Hub и Rafay по созданию управляемого GPU PaaS отражает общий тренд на автоматизацию региональной AI-инфраструктуры. Для DevOps-инженеров управляемая оркестрация GPU упрощает работу, скрывая сложности настройки драйверов, CUDA и подов Kubernetes за стандартными интерфейсами самообслуживания.
+- **Coolify - The self-hosted PaaS that saves you from Docker headaches - korben.info**
+  Coolify решает проблему сложности ручного управления Docker Compose и серверной инфраструктурой на независимых VPS. Платформа предоставляет удобную панель для деплоя, управления переменными окружения и маршрутизации SSL, заполняя нишу между голыми серверами и тяжелыми облачными PaaS. Впрочем, надежность в продакшене по-прежнему упирается в то, насколько грамотно настроено резервное копирование и работа с томами данных.
+  [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE95UllVb2J5bnB6V1lIUUxrbXd4aHg5T3ZLeE81TTBPT0dyc3gwemliQXlOeXpPUlp4THpSaHFxVndLd21XWEJFZlhUZ2l4U2pTZEpyMWNRTHQ4OG5LeTlObjRQRkJINTZ3YWc4Q1g0N1BQNU5QSlMtdDN2OA?oc=5)
+
+- **Moro Hub and Rafay team up for GPU PaaS in Dubai - datacenterdynamics.com**
+  Запуск управляемых GPU PaaS демонстрирует трансформацию облачной инфраструктуры под требования автоматизации ИИ-нагрузок. Оркестрация на базе Rafay позволяет провайдерам предоставлять GPU-мощности без необходимости вручную настраивать драйверы CUDA и масштабировать узлы. Такой подход помогает контролировать расходы на инфраструктуру и обеспечивает единый контроль доступа к ресурсам.
   [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
 
 ## Архив
