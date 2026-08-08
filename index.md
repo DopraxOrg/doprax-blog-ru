@@ -21,27 +21,31 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-07
+### Свежее — 2026-08-08
 
-- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Движки автоматизации рабочих процессов, такие как n8n, обычно обладают широкими правами в системе и сети, поэтому уязвимости обхода песочницы для них критичны. Если редактор сценариев может выполнять произвольные команды ОС, злоумышленник с минимальными правами в приложении получает доступ к хосту. При самостоятельном хостинге n8n необходимо обеспечить жесткую изоляцию контейнеров и оперативно установить исправления.
+- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - thehackernews.com**
+  Изоляция выполнения кода в движках автоматизации остается сложной эксплуатационной задачей. Запуск инструментов автоматизации с повышенными правами или открытыми вебхуками без строгой контейнерной изоляции создает прямую угрозу для хостовой системы. Командам следует изолировать подобные среды выполнения с помощью контейнеров с ограничениями root-прав.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect**
-  Внеочередные обновления безопасности для критических компонентов инфраструктуры, таких как NGINX и BIG-IP, указывают на серьезные уязвимости на пути сетевого трафика. Задержка патчей на пограничных балансировщиках подвергает инфраструктуру риску удаленного выполнения кода или отказа в обслуживании. Инженерным командам следует оперативно выкатить эти исправления через CI/CD-пайплайны для минимизации окна атаки.
+  Внеплановые исправления безопасности для пограничных прокси требуют немедленного применения, так как эти узлы принимают внешний трафик. Задержка обновлений инфраструктуры маршрутизации подвергает внутренние сегменты сети риску удаленного выполнения кода. Командам эксплуатации следует настроить автоматизированные пайплайны обновления прокси-шлюзов без простоя.
   [Read more](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5)
 
+- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
+  Обеспечение безопасности автономных ИИ-агентов требует жестких границ выполнения, выходящих за рамки изоляции процессов ОС. Использование контейнеров Docker в качестве одноразовых песочниц ограничивает радиус поражения при выполнении агентом нежелательных команд. Такой подход распространяет проверенные практики контейнерной безопасности на недетерминированные нагрузки.
+  [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
+
+- **Coolify - The self-hosted PaaS that saves you from Docker headaches - Korben**
+  Self-hosted PaaS-решения обеспечивают ощутимую экономию по сравнению с публичными облаками для небольших и средних нагрузок. Тем не менее, управление ресурсами серверов, хранилищами и маршрутизацией остается на стороне администратора. Компромисс сводится к обмену стоимости подписки на затраты по обслуживанию собственной инфраструктуры.
+  [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE95UllVb2J5bnB6V1lIUUxrbXd4aHg5T3ZLeE81TTBPT0dyc3gwemliQXlOeXpPUlp4THpSaHFxVndLd21XWEJFZlhUZ2l4U2pTZEpyMWNRTHQ4OG5LeTlObjRQRkJINTZ3YWc4Q1g0N1BQNU5QSlMtdDN2OA?oc=5)
+
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Появление фонового демона и нативной поддержки devcontainers в AWS Finch сокращает разрыв по функциональности с Docker Desktop. Благодаря персистентному слою служб Finch теперь может напрямую интегрироваться с IDE вроде VS Code без оглядки на проприетарные утилиты. Это дает компаниям полностью открытую и соответствующую корпоративным стандартам альтернативу для локальной разработки.
+  Поддержка фонового демона и спецификации devcontainers превращает Finch в полноценный открытый контейнерный движок для macOS. Замена проприетарных сред разработки открытыми инструментами снижает лицензионные риски в предприятиях. Стандартизация конфигураций devcontainer гарантирует идентичность сред разработки на локальных компьютерах и в CI-пайплайнах.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
 - **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Судебные иски из-за завышенных обещаний в сфере ИИ подчеркивают разрыв между маркетингом вендоров и реальным ROI от ИИ в DevOps. На практике инструменты генерации кода требуют серьезного контроля и дополнительной проверки безопасности. Командам эксплуатации и платформенной инженерии стоит оценивать ИИ-интеграции по реальному ускорению пайплайнов и снижению ошибок, а не по маркетинговым заявлениям.
+  Судебные разбирательства вокруг маркетинга enterprise-платформ подчеркивают разрыв между анонсами ИИ-функций и их реальной пользой. Руководству инженерии следует оценивать платформы по измеримой скорости пайплайнов и параметрам безопасности, а не по обещаниям vendor-презентаций. Выбор инструментов должен опираться на проверенные метрики производительности и стабильность систем.
   [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
-
-- **macOS 26: Native container support delights developers – and not just them - heise online**
-  Нативная поддержка контейнеров в macOS избавляет от накладных расходов на запуск тяжелых виртуальных машин Linux. Обход прослоек виртуализации вроде QEMU или HyperKit ощутимо повышает производительность ввода-вывода и энергоэффективность локального окружения. Это упрощает и ускоряет работу с локальными кластерами Kubernetes и Docker на оборудовании Apple.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
 
 ## Архив
 
