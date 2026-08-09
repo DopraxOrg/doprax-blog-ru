@@ -21,30 +21,30 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-08
+### Свежее — 2026-08-09
 
-- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - thehackernews.com**
-  Изоляция выполнения кода в движках автоматизации остается сложной эксплуатационной задачей. Запуск инструментов автоматизации с повышенными правами или открытыми вебхуками без строгой контейнерной изоляции создает прямую угрозу для хостовой системы. Командам следует изолировать подобные среды выполнения с помощью контейнеров с ограничениями root-прав.
+- **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
+  Инструменты автоматизации процессов вроде n8n хранят ключевые API-токены и доступ к внутренним сетям, из-за чего становятся приоритетной мишенью. Побег из песочницы с возможностью выполнения команд на уровне хоста дает злоумышленникам прямой доступ к инфраструктурным ресурсам компании.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect**
-  Внеплановые исправления безопасности для пограничных прокси требуют немедленного применения, так как эти узлы принимают внешний трафик. Задержка обновлений инфраструктуры маршрутизации подвергает внутренние сегменты сети риску удаленного выполнения кода. Командам эксплуатации следует настроить автоматизированные пайплайны обновления прокси-шлюзов без простоя.
+  Внеочередные обновления безопасности для NGINX и BIG-IP указывают на критические уязвимости на сетевом периметре. Инфраструктурным командам следует оперативно патчить узлы, чтобы предотвратить несанкционированный доступ и сбои на уровне входного трафика.
   [Read more](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5)
 
-- **NanoClaw integrates with Docker to bring trust to AI agents - Techzine Global**
-  Обеспечение безопасности автономных ИИ-агентов требует жестких границ выполнения, выходящих за рамки изоляции процессов ОС. Использование контейнеров Docker в качестве одноразовых песочниц ограничивает радиус поражения при выполнении агентом нежелательных команд. Такой подход распространяет проверенные практики контейнерной безопасности на недетерминированные нагрузки.
+- **Trojanized ai-sdk-ollama Delivers Miasma, a Self-Replicating npm Worm via binding.gyp - Endor Labs**
+  Вредоносные пакеты в npm вроде поддельного SDK для Ollama используют сборочные скрипты binding.gyp для запуска троянов в момент установки зависимостей. Эта атака на цепочку поставок подтверждает необходимость ограничивать выполнение установочных скриптов и тщательно аудировать сторонние библиотеки в CI/CD.
+  [Read more](https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdXaXZlNE1UR21NeDdsVlVXZm5BWDBqMGI0VzVvdHpkLV9IeHNjV2o3OXh2eWM3dXc2d0wxSmxYbEpsNWdXYU81T1BTWDdicVptRzJMRnN3cGxtaldELXpqbmVuanpIUExwQXlBSVJLRkpqOTRIOXRLSW5wZ3J3TzM0dkY?oc=5)
+
+- **NanoClaw integrates with Docker to bring trust to AI agents - techzine.eu**
+  Запуск автономных ИИ-агентов напрямую в основной ОС создает серьезные риски без должной изоляции их действий. Контейнеризация агентов с помощью Docker позволяет изолировать доступ к файловой системе и сети, задавая привычные инфраструктурные рамки для ИИ-процессов.
   [Read more](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEg1RGJrZWtiTVlSbk5JZnlRd2xVV2tEVjBHODI1cW1SQUFDdFVzSE5VQUkxcE55OGFqTEZNM3VXUFRHRFg3VzVXWUk2MWlaRjhDaERUamVYclhyTVdPSVJKeF9Cb2FFcG95dnlyeUhNSU9OV1RNZ19CbGpkUVdpMGxLOTZfT0FudXplbU9PVGJLUUgwbjNjYXhMTl93YTlqc21DRTd3?oc=5)
 
-- **Coolify - The self-hosted PaaS that saves you from Docker headaches - Korben**
-  Self-hosted PaaS-решения обеспечивают ощутимую экономию по сравнению с публичными облаками для небольших и средних нагрузок. Тем не менее, управление ресурсами серверов, хранилищами и маршрутизацией остается на стороне администратора. Компромисс сводится к обмену стоимости подписки на затраты по обслуживанию собственной инфраструктуры.
-  [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE95UllVb2J5bnB6V1lIUUxrbXd4aHg5T3ZLeE81TTBPT0dyc3gwemliQXlOeXpPUlp4THpSaHFxVndLd21XWEJFZlhUZ2l4U2pTZEpyMWNRTHQ4OG5LeTlObjRQRkJINTZ3YWc4Q1g0N1BQNU5QSlMtdDN2OA?oc=5)
-
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Поддержка фонового демона и спецификации devcontainers превращает Finch в полноценный открытый контейнерный движок для macOS. Замена проприетарных сред разработки открытыми инструментами снижает лицензионные риски в предприятиях. Стандартизация конфигураций devcontainer гарантирует идентичность сред разработки на локальных компьютерах и в CI-пайплайнах.
+  Добавление поддержки фонового демона и спецификации Dev Containers в AWS Finch упрощает переход на открытые контейнерные среды без потери привычного инструментария. Стандартизация локальной разработки вокруг OCI-совместимых утилит снижает зависимость от проприетарного софта и гарантирует соответствие продакшену.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
 - **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Судебные разбирательства вокруг маркетинга enterprise-платформ подчеркивают разрыв между анонсами ИИ-функций и их реальной пользой. Руководству инженерии следует оценивать платформы по измеримой скорости пайплайнов и параметрам безопасности, а не по обещаниям vendor-презентаций. Выбор инструментов должен опираться на проверенные метрики производительности и стабильность систем.
+  Иски инвесторов к GitLab из-за заявлений о доходах от ИИ отражают растущий скептицизм рынка к обещанной отдаче от генеративных DevOps-инструментов. Инфраструктурные команды смещают фокус с экспериментальных фич на измерение реального прироста производительности и контроль рисков.
   [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
 
 ## Архив
