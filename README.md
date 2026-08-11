@@ -5,31 +5,27 @@ Recent articles:
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-10
+### Свежее — 2026-08-11
 
 - **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Инструмент автоматизации процессов n8n столкнулся с критической уязвимостью: редакторы сценариев могут выходить из песочницы и выполнять произвольные команды ОС с правами основного процесса. Кроме того, публичные вебхуки активно используются злоумышленниками для размещения и запуска вредоносного ПО. Командам, самостоятельно хостящим n8n, следует немедленно ограничить права процессов в контейнерах и провести аудит открытых эндпоинтов.
+  Уязвимость с выходом из песочницы в n8n наглядно показывает риски запуска систем автоматизации с избыточными правами в хост-системе. При самостоятельной эксплуатации таких инструментов редактор сценариев получает возможность исполнять произвольный код, если не настроена изоляция и не ограничены привилегии. Изоляция воркеров в rootless-контейнерах становится обязательной для любых инсталляций с несколькими пользователями.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **Trojanized ai-sdk-ollama Delivers Miasma, a Self-Replicating npm Worm via binding.gyp - Endor Labs**
-  В пакете ai-sdk-ollama из реестра npm обнаружен вредоносный код, запускающий самораспространяющийся червь через хуки компиляции binding.gyp при установке. Атака нацелена на разработчиков локальных ИИ-сервисов, подключающих сторонние SDK в свои сборочные конвейеры. Это подтверждает необходимость жесткой фиксации зависимостей, сканирования цепочек поставок и запуска сборки пакетов исключительно в изолированных контейнерах.
+  Внедрение вредоносного кода через binding.gyp демонстрирует, как атаки на цепочку поставок смещаются в сторону инфраструктуры разработки ИИ-сервисов. Поскольку npm по умолчанию запускает нативные скрипты сборки при установке, компрометация происходит еще до анализа кода. Включение запрета на исполнение lifecycle-скриптов или запуск установки в изолированных песочницах становятся необходимыми мерами предосторожности.
   [Read more](https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdXaXZlNE1UR21NeDdsVlVXZm5BWDBqMGI0VzVvdHpkLV9IeHNjV2o3OXh2eWM3dXc2d0wxSmxYbEpsNWdXYU81T1BTWDdicVptRzJMRnN3cGxtaldELXpqbmVuanpIUExwQXlBSVJLRkpqOTRIOXRLSW5wZ3J3TzM0dkY?oc=5)
 
 - **F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect**
-  Компания F5 и проект NGINX выпустили внеплановые обновления безопасности, устраняющие критические уязвимости в BIG-IP и веб-сервере NGINX. Бреши позволяют вызвать отказ в обслуживании или выполнить удаленный код при обработке определенных HTTP-заголовков. Инфраструктурным командам, использующим NGINX в качестве ingress-контроллеров или пограничных прокси, следует оперативно установить патчи или применить защитные правила WAF.
+  Внеплановые обновления безопасности для NGINX и BIG-IP устраняют уязвимости, способные привести к обходу авторизации или отказу в обслуживании на граничных прокси. Пограничные прокси находятся под постоянным сканированием, поэтому задержка с установкой патчей создает прямой риск для периметра. Инженерам следует проверить текущие конфигурации и оперативно применить исправления.
   [Read more](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5)
 
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  AWS обновила свой открытый CLI для работы с контейнерами Finch, добавив поддержку спецификации Dev Containers и архитектуру фонового демона. Это позволяет разработчикам на macOS и Linux использовать стандартные среды разработки без зависимости от проприетарных контейнерных сред. Для инженерных команд, ищущих альтернативу Docker Desktop, Finch предлагает полноценную замену в локальной разработке.
+  Расширение поддержки dev-контейнеров и фонового демона в AWS Finch делает открытый сборочный инструментарий полноценной заменой Docker Desktop на рабочих станциях разработчиков. Нативная интеграция dev containers обеспечивает идентичность локального окружения независимо от ОС. Это позволяет снизить зависимость от коммерческих лицензий без изменения привычного CLI-процесса.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
 - **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Против GitLab поданы коллективные иски с обвинениями в завышении финансовых ожиданий и темпов внедрения ИИ-инструментов в платформе. Пока вендоры продолжают активно добавлять генеративный ИИ в CI/CD, корпоративные клиенты требуют четких метрик окупаемости перед переходом на более дорогие тарифы. При оценке DevSecOps-инструментов с ИИ организациям стоит опираться на реальные показатели скорости разработки, а не на прогнозы вендоров.
+  Иски инвесторов против GitLab из-за завышенных заявлений о доходах от ИИ-функционала отражают разрыв между маркетингом вендоров и реальной практикой эксплуатирующих команд. Инженерные отделы оценивают платформы по надежности CI/CD и управлению доступом, а не по наличию генеративных функций. Командам стоит скептически относиться к переплатам за ИИ-модули, которые повышают стоимость лицензий без гарантированного роста продуктивности.
   [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
-
-- **macOS 26: Native container support delights developers – and not just them - heise online**
-  Apple добавила нативную поддержку контейнеров в macOS, реализовав встроенные интерфейсы виртуализации и выполнения контейнеров на уровне ядра. Это устраняет лишние накладные расходы и падение производительности при запуске виртуальных машин Linux и сторонних движков на чипах Apple Silicon. Для DevOps-инженеров на macOS это означает ускорение сборки контейнеров и меньшее потребление оперативной памяти при локальной разработке.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
 
 ## Архив
 
