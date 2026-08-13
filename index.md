@@ -21,35 +21,31 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-12
+### Свежее — 2026-08-13
+
+- **Alarming runC Flaws Enable Hackers To Exploit Docker Containers For Root Access - HotHardware**
+  Уязвимости в runC нарушают изоляцию контейнеров и позволяют атакующим с доступом к контейнеру получить права root на хост-узле. Это в очередной раз подтверждает, что запуск контейнеров от не-root пользователя и ограничение привилегий на хосте остаются обязательными мерами защиты.
+  [Read more](https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTE0X1FvWGtLRDhBZXROVWUzcFdZN1hUSEZFNm0zSV9MajZUYm5vM0lDNVdKd0xfdHZpbWhFYnUtTUI5ckpsRHJMdnVjZl9Nb2NYd0dTeFY2bmZyZkNwbDU0S2Z3S3NxM1FpS1FrVVg1cnBFQlZrRzgzalZTWXliZjFfaHJqMTZJaXlCRA?oc=5)
 
 - **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Побег из песочницы в n8n подчёркивает риски выполнения low-code автоматизаций с завышенными привилегиями. Предоставление пользователям прав на редактирование сценариев без жёсткой изоляции контейнера фактически равносильно выдаче доступа к терминалу. При самостоятельным хостинге n8n следует запускать в непривилегированных контейнерах с монтированием корневой файловой системы в режиме read-only и ограничением исходящего трафика.
+  Побег из песочницы в n8n позволяет пользователям с правами на редактирование сценариев выполнять произвольные команды ОС от имени процесса n8n. В self-hosted инсталляциях, где у n8n обычно есть доступ к внутренним API, это превращает права редактора процессов в полный взлом сервера.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **Trojanized ai-sdk-ollama Delivers Miasma, a Self-Replicating npm Worm via binding.gyp - Endor Labs**
-  Злоумышленники сместили фокус на вспомогательные библиотеки вокруг локальных LLM, используя сборочные скрипты вроде binding.gyp для доставки вредоносного кода. Поскольку процедуры npm install автоматически запускают нативную сборку, рабочие станции разработчиков и CI-раннеры оказываются под угрозой. Командам следует отключать выполнение жизненных скриптов npm по умолчанию и строго проверять lock-файлы.
+  Вредоносный пакет ai-sdk-ollama использовал хуки сборки в binding.gyp для запуска червя прямо во время установки. Риски цепочки поставок в экосистеме локальных ИИ быстро растут, так как инженеры активно устанавливают непроверенные обертки и библиотеки.
   [Read more](https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdXaXZlNE1UR21NeDdsVlVXZm5BWDBqMGI0VzVvdHpkLV9IeHNjV2o3OXh2eWM3dXc2d0wxSmxYbEpsNWdXYU81T1BTWDdicVptRzJMRnN3cGxtaldELXpqbmVuanpIUExwQXlBSVJLRkpqOTRIOXRLSW5wZ3J3TzM0dkY?oc=5)
 
-- **F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect**
-  Внеочередные обновления безопасности для NGINX и BIG-IP указывают на серьёзные уязвимости в ключевых точках маршрутизации входящего трафика. Граничные реверс-прокси служат приоритетной целью для атак, где возможность удалённого выполнения кода ставит под угрозу всю внутреннюю сеть. Инфраструктурным командам необходимо оперативно провести аудит используемых версий и запустить автоматическое пересоздание образов.
-  [Read more](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5)
+- **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - cybersecuritynews.com**
+  Внеочередные обновления Nginx устраняют критические уязвимости, способные привести к отказу в обслуживании или удаленному выполнению кода. Внешние реверс-прокси требуют оперативной установки патчей, так как являются первой линией обороны всей сетевой инфраструктуры.
+  [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
 
-- **Alarming runC Flaws Enable Hackers To Exploit Docker Containers For Root Access - HotHardware**
-  Уязвимости в низкоуровневой среде исполнения runC представляют прямую угрозу для мультитенантной контейнерной архитектуры, позволяя получить root-доступ к хостовой системе. Изоляция контейнеров напрямую зависит от стабильности runtime, поэтому отсутствие патчей делает хост уязвимым для повышения привилегий из ненадёжных контейнеров. Для защиты требуется немедленное обновление runC, а также принудительное включение user namespaces и профилей seccomp.
-  [Read more](https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTE0X1FvWGtLRDhBZXROVWUzcFdZN1hUSEZFNm0zSV9MajZUYm5vM0lDNVdKd0xfdHZpbWhFYnUtTUI5ckpsRHJMdnVjZl9Nb2NYd0dTeFY2bmZyZkNwbDU0S2Z3S3NxM1FpS1FrVVg1cnBFQlZrRzgzalZTWXliZjFfaHJqMTZJaXlCRA?oc=5)
+- **Google-Backed Software Developer GitLab Eyes Sale, Reuters Says - Bloomberg.com**
+  Сообщения о возможной продаже GitLab подчеркивают растущее давление в пользу консолидации на рынке вендоров DevOps-платформ. Для корпоративных команд это создает риски, связанные с возможным изменением цен, условий лицензирования и стратегии развития платформы.
+  [Read more](https://news.google.com/rss/articles/CBMiswFBVV95cUxPTUdBNmJQbXNrSENsUzNrRmFUZDNkTG1ZaUhsS2NEZTYtck42UkZpNkdTRTBSRzJTc2drdnlHWlpMTjhzcmZ3YlljbGVqWnJHenBVb0NHbTk5OE1tc3Q4cVpMamxWUlhJdGdPaElPckpHbGJHbzA5MzRNX0xXTkl5MXVPRzRrLWZkVjBueHp4TEJYOTRYU0lrSzNweE9lRDl5SnViYmpLRnJDakJrT01ha1g5MA?oc=5)
 
-- **Moro Hub and Rafay team up for GPU PaaS in Dubai - Data Center Dynamics**
-  Запуск специализированных GPU PaaS в региональных дата-центрах упрощает эксплуатацию инфраструктуры под ресурсоёмкие задачи ИИ и машинного обучения. Использование Kubernetes-абстракций вроде Rafay облегчает распределение ресурсов и управление драйверами на bare-metal кластерах. Это позволяет инженерным командам предоставлять масштабируемые вычислительные мощности с соблюдением требований к локализации данных.
-  [Read more](https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUNOMVNIS1l0Tnl0VHN2RmdjWnpfU25sVTN6WTMyODZTQWJ0NzdEaENsc09HVHRHTDRFMjR2UGRpbEp1ZElBUG5LTVNWd3UyTHZoa0c2YWRlQzh0Vm8wT3FNS1h4VmRVa2JaZktZczNzMVRXQS1ObHM5LUVLcG1TMFpEQzF1SzFhOUVmNjBtWTlwVlNOeS04?oc=5)
-
-- **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Расширение возможностей AWS Finch за счёт поддержки спецификации Dev Containers и фонового демона усиливает его позиции как модульной альтернативы Docker Desktop. Стандартизация конфигураций окружения через Dev Containers снижает рассинхронизацию между локальной разработкой и продакшен-пайплайнами CI. Использование открытых CLI-инструментов позволяет командам избежать привязки к коммерческим лицензиям и снизить накладные расходы.
+- **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - aws.amazon.com**
+  Open-source инструмент Finch от Amazon получил поддержку devcontainer и фоновый демон для работы с контейнерами на macOS. Создание открытой альтернативы Docker Desktop помогает организациям стандартизировать среды разработки без необходимости оплачивать коммерческие лицензии.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
-
-- **GitLab thrice sued for 'misleading' investors with AI hype - The Register**
-  Судебные иски против GitLab из-за завышенных показателей продуктивности ИИ отражают растущий скептицизм относительно реальной эффективности генеративных инструментов в DevOps. При оценке ИИ-функций в корпоративных платформах командам следует опираться на измеримую пропускную способность пайплайнов, а не на заявления вендоров. Внедрение должно оправдываться реальным сокращением времени цикла и качеством кода.
-  [Read more](https://news.google.com/rss/articles/CBMisgFBVV95cUxONTBSSzB1MV9FUU9wX1ZBT2xFdVZCN0kwUWVGbVlSUmdaN1JMTUJpcjU5QmpEZW93V21CVkN0NHd2S3ZBbTZCNEpzYndyT0ZiQi1zMWRuUllNbFVvVVFXY05Da3I5R2pyRS0xUEFINS1obzkwei1SSnB4ZDZrbU9pc0VMeGNpNVk2d09GQm9lTUluRFd0SjRJVnVwQmt6TWhlY0w5UGVCRmV2Q2JMdlkwN1J3?oc=5)
 
 ## Архив
 
