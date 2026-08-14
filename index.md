@@ -21,31 +21,31 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-13
-
-- **Alarming runC Flaws Enable Hackers To Exploit Docker Containers For Root Access - HotHardware**
-  Уязвимости в runC нарушают изоляцию контейнеров и позволяют атакующим с доступом к контейнеру получить права root на хост-узле. Это в очередной раз подтверждает, что запуск контейнеров от не-root пользователя и ограничение привилегий на хосте остаются обязательными мерами защиты.
-  [Read more](https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTE0X1FvWGtLRDhBZXROVWUzcFdZN1hUSEZFNm0zSV9MajZUYm5vM0lDNVdKd0xfdHZpbWhFYnUtTUI5ckpsRHJMdnVjZl9Nb2NYd0dTeFY2bmZyZkNwbDU0S2Z3S3NxM1FpS1FrVVg1cnBFQlZrRzgzalZTWXliZjFfaHJqMTZJaXlCRA?oc=5)
+### Свежее — 2026-08-14
 
 - **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Побег из песочницы в n8n позволяет пользователям с правами на редактирование сценариев выполнять произвольные команды ОС от имени процесса n8n. В self-hosted инсталляциях, где у n8n обычно есть доступ к внутренним API, это превращает права редактора процессов в полный взлом сервера.
+  Уязвимость с выходом из песочницы в n8n позволяет любому пользователю с правами редактирования сценариев выполнять произвольные команды от имени основного процесса. При самостоятельном хостинге это фактически приравнивает доступ к веб-интерфейсу к шелл-доступу, если сервис не изолирован в rootless-контейнерах или отдельных виртуальных машинах. Инсталляциям с общим доступом к сценариям необходимо срочно накатить патч или ограничить права контейнера на уровне хостовой ОС.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **Trojanized ai-sdk-ollama Delivers Miasma, a Self-Replicating npm Worm via binding.gyp - Endor Labs**
-  Вредоносный пакет ai-sdk-ollama использовал хуки сборки в binding.gyp для запуска червя прямо во время установки. Риски цепочки поставок в экосистеме локальных ИИ быстро растут, так как инженеры активно устанавливают непроверенные обертки и библиотеки.
+  Пакет ai-sdk-ollama распространял самореплицирующийся npm-червь через хуки сборки binding.gyp на этапе установки. Поскольку скрипты жизненного цикла запускаются автоматически, фиксации версий в lock-файлах недостаточно для защиты локальных сред и CI-пайплайнов. Командам, разрабатывающим локальные ИИ-сервисы, стоит по умолчанию использовать флаг --ignore-scripts и внимательно проверять нативные зависимости.
   [Read more](https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdXaXZlNE1UR21NeDdsVlVXZm5BWDBqMGI0VzVvdHpkLV9IeHNjV2o3OXh2eWM3dXc2d0wxSmxYbEpsNWdXYU81T1BTWDdicVptRzJMRnN3cGxtaldELXpqbmVuanpIUExwQXlBSVJLRkpqOTRIOXRLSW5wZ3J3TzM0dkY?oc=5)
 
-- **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - cybersecuritynews.com**
-  Внеочередные обновления Nginx устраняют критические уязвимости, способные привести к отказу в обслуживании или удаленному выполнению кода. Внешние реверс-прокси требуют оперативной установки патчей, так как являются первой линией обороны всей сетевой инфраструктуры.
-  [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
+- **F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect**
+  F5 выпустила внеплановые исправления критических уязвимостей для систем BIG-IP и дистрибутивов NGINX. Непропатченные пограничные прокси и ingress-контроллеры остаются частой целью для автоматизированных атак на периметр и расщепления HTTP-запросов. Администраторам важно своевременно обновить граничные сервисы и проверить корректность конфигураций перед перезагрузкой.
+  [Read more](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5)
 
-- **Google-Backed Software Developer GitLab Eyes Sale, Reuters Says - Bloomberg.com**
-  Сообщения о возможной продаже GitLab подчеркивают растущее давление в пользу консолидации на рынке вендоров DevOps-платформ. Для корпоративных команд это создает риски, связанные с возможным изменением цен, условий лицензирования и стратегии развития платформы.
-  [Read more](https://news.google.com/rss/articles/CBMiswFBVV95cUxPTUdBNmJQbXNrSENsUzNrRmFUZDNkTG1ZaUhsS2NEZTYtck42UkZpNkdTRTBSRzJTc2drdnlHWlpMTjhzcmZ3YlljbGVqWnJHenBVb0NHbTk5OE1tc3Q4cVpMamxWUlhJdGdPaElPckpHbGJHbzA5MzRNX0xXTkl5MXVPRzRrLWZkVjBueHp4TEJYOTRYU0lrSzNweE9lRDl5SnViYmpLRnJDakJrT01ha1g5MA?oc=5)
+- **Alarming runC Flaws Enable Hackers To Exploit Docker Containers For Root Access - HotHardware**
+  Уязвимости в runC позволяют вредоносному коду внутри контейнера перезаписывать бинарники рантайма на хосте или перехватывать файловые дескрипторы при запуске. Это нарушает базовые гарантии изоляции в мультитенантных кластерах даже без использования привилегированного режима. Администраторам инфраструктуры необходимо обновить рантайм на всех нодах и настроить user namespaces там, где это поддерживается.
+  [Read more](https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTE0X1FvWGtLRDhBZXROVWUzcFdZN1hUSEZFNm0zSV9MajZUYm5vM0lDNVdKd0xfdHZpbWhFYnUtTUI5ckpsRHJMdnVjZl9Nb2NYd0dTeFY2bmZyZkNwbDU0S2Z3S3NxM1FpS1FrVVg1cnBFQlZrRzgzalZTWXliZjFfaHJqMTZJaXlCRA?oc=5)
 
-- **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - aws.amazon.com**
-  Open-source инструмент Finch от Amazon получил поддержку devcontainer и фоновый демон для работы с контейнерами на macOS. Создание открытой альтернативы Docker Desktop помогает организациям стандартизировать среды разработки без необходимости оплачивать коммерческие лицензии.
+- **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
+  AWS добавила в свой опенсорсный контейнерный CLI Finch поддержку спецификации Dev Containers и фоновый демон. Это упрощает отказ от Docker Desktop, избавляя от необходимости переписывать конфигурации IDE и процессы локальной разработки. Наличие демона также выравнивает поведение утилиты между средами macOS и Linux.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
+
+- **macOS 26: Native container support delights developers – and not just them - heise online**
+  Apple внедряет нативную виртуализацию контейнеров прямо в macOS, что снижает накладные расходы по памяти и процессору по сравнению с использованием вспомогательных виртуальных машин Linux. Для инженеров на Apple Silicon это означает меньшую нагрузку на систему при сборке образов и запуске тяжелых локальных окружений. Разработчики инструментов для контейнеризации теперь могут опираться на стандартные системные API вместо проприетарных прослоек.
+  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
 
 ## Архив
 

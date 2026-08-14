@@ -1096,6 +1096,38 @@
           "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5",
           "commentary": "Open-source инструмент Finch от Amazon получил поддержку devcontainer и фоновый демон для работы с контейнерами на macOS. Создание открытой альтернативы Docker Desktop помогает организациям стандартизировать среды разработки без необходимости оплачивать коммерческие лицензии."
         }
+      ],
+      "2026-08-14": [
+        {
+          "title": "n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5",
+          "commentary": "Уязвимость с выходом из песочницы в n8n позволяет любому пользователю с правами редактирования сценариев выполнять произвольные команды от имени основного процесса. При самостоятельном хостинге это фактически приравнивает доступ к веб-интерфейсу к шелл-доступу, если сервис не изолирован в rootless-контейнерах или отдельных виртуальных машинах. Инсталляциям с общим доступом к сценариям необходимо срочно накатить патч или ограничить права контейнера на уровне хостовой ОС."
+        },
+        {
+          "title": "Trojanized ai-sdk-ollama Delivers Miasma, a Self-Replicating npm Worm via binding.gyp - Endor Labs",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdXaXZlNE1UR21NeDdsVlVXZm5BWDBqMGI0VzVvdHpkLV9IeHNjV2o3OXh2eWM3dXc2d0wxSmxYbEpsNWdXYU81T1BTWDdicVptRzJMRnN3cGxtaldELXpqbmVuanpIUExwQXlBSVJLRkpqOTRIOXRLSW5wZ3J3TzM0dkY?oc=5",
+          "commentary": "Пакет ai-sdk-ollama распространял самореплицирующийся npm-червь через хуки сборки binding.gyp на этапе установки. Поскольку скрипты жизненного цикла запускаются автоматически, фиксации версий в lock-файлах недостаточно для защиты локальных сред и CI-пайплайнов. Командам, разрабатывающим локальные ИИ-сервисы, стоит по умолчанию использовать флаг --ignore-scripts и внимательно проверять нативные зависимости."
+        },
+        {
+          "title": "F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5",
+          "commentary": "F5 выпустила внеплановые исправления критических уязвимостей для систем BIG-IP и дистрибутивов NGINX. Непропатченные пограничные прокси и ingress-контроллеры остаются частой целью для автоматизированных атак на периметр и расщепления HTTP-запросов. Администраторам важно своевременно обновить граничные сервисы и проверить корректность конфигураций перед перезагрузкой."
+        },
+        {
+          "title": "Alarming runC Flaws Enable Hackers To Exploit Docker Containers For Root Access - HotHardware",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTE0X1FvWGtLRDhBZXROVWUzcFdZN1hUSEZFNm0zSV9MajZUYm5vM0lDNVdKd0xfdHZpbWhFYnUtTUI5ckpsRHJMdnVjZl9Nb2NYd0dTeFY2bmZyZkNwbDU0S2Z3S3NxM1FpS1FrVVg1cnBFQlZrRzgzalZTWXliZjFfaHJqMTZJaXlCRA?oc=5",
+          "commentary": "Уязвимости в runC позволяют вредоносному коду внутри контейнера перезаписывать бинарники рантайма на хосте или перехватывать файловые дескрипторы при запуске. Это нарушает базовые гарантии изоляции в мультитенантных кластерах даже без использования привилегированного режима. Администраторам инфраструктуры необходимо обновить рантайм на всех нодах и настроить user namespaces там, где это поддерживается."
+        },
+        {
+          "title": "Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5",
+          "commentary": "AWS добавила в свой опенсорсный контейнерный CLI Finch поддержку спецификации Dev Containers и фоновый демон. Это упрощает отказ от Docker Desktop, избавляя от необходимости переписывать конфигурации IDE и процессы локальной разработки. Наличие демона также выравнивает поведение утилиты между средами macOS и Linux."
+        },
+        {
+          "title": "macOS 26: Native container support delights developers – and not just them - heise online",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5",
+          "commentary": "Apple внедряет нативную виртуализацию контейнеров прямо в macOS, что снижает накладные расходы по памяти и процессору по сравнению с использованием вспомогательных виртуальных машин Linux. Для инженеров на Apple Silicon это означает меньшую нагрузку на систему при сборке образов и запуске тяжелых локальных окружений. Разработчики инструментов для контейнеризации теперь могут опираться на стандартные системные API вместо проприетарных прослоек."
+        }
       ]
     }
   }
