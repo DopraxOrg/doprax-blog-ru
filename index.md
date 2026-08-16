@@ -21,35 +21,31 @@
 ## Ежедневные новости DevOps
 
 <!-- NEWS START -->
-### Свежее — 2026-08-15
+### Свежее — 2026-08-16
 
 - **n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process - The Hacker News**
-  Уязвимость с выходом из песочницы в n8n показывает риски использования одного инстанса автоматизации несколькими пользователями. Если n8n доступен не только доверенным администраторам, его необходимо изолировать на уровне отдельных контейнеров или виртуальных машин. Среду выполнения сценариев автоматизации следует изолировать так же строго, как и публичные CI-раннеры.
+  Если вы разворачиваете n8n внутри периметра для интеграции чувствительных систем, побег из песочницы превращает сценарий автоматизации в прямое исполнение шелл-команд на хосте. Любой пользователь с правами редактора может выйти за пределы воркфлоу, если контейнер n8n не запущен в строго ограниченном rootless-режиме с урезанными Linux capabilities.
   [Read more](https://news.google.com/rss/articles/CBMie0FVX3lxTE80cFJDS2J5QjZkQ2lDTm56U3pxZE5vWm56NDRzZGxxelJFanhibDR6WVhub1RIdTR0RUl3cXo3bkdvQ19GekhQNmI2cUQtSUhSWjVsbFJBMEJidXRoZEI5RUZwSVdmaHBXZm00dGRUa2lPY0oySWtoUXhvbw?oc=5)
 
 - **Trojanized ai-sdk-ollama Delivers Miasma, a Self-Replicating npm Worm via binding.gyp - Endor Labs**
-  Внедрение вредоносного кода через binding.gyp остается эффективным вектором атак на цепочки поставок, поскольку сборка запускается сразу при установке пакета. На фоне массового внедрения сторонних оберток для локальных LLM вроде Ollama, аудит установочных скриптов в npm должен стать обязательным шагом в CI-пайплайнах. Отключение автоматического выполнения postinstall-скриптов — базовый шаг для минимизации подобных рисков.
+  Эксплуатация нативной компиляции через binding.gyp остается надежным вектором атак на цепочки поставок в экосистеме JavaScript. Разработчики, использующие непроверенные пакеты для локальных LLM на своих машинах, рискуют скомпрометировать рабочие станции и сборочные раннеры CI.
   [Read more](https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdXaXZlNE1UR21NeDdsVlVXZm5BWDBqMGI0VzVvdHpkLV9IeHNjV2o3OXh2eWM3dXc2d0wxSmxYbEpsNWdXYU81T1BTWDdicVptRzJMRnN3cGxtaldELXpqbmVuanpIUExwQXlBSVJLRkpqOTRIOXRLSW5wZ3J3TzM0dkY?oc=5)
 
-- **F5 releases out-of-band security updates for NGINX and BIG-IP products - Field Effect**
-  Внеплановые обновления от F5 указывают на критические уязвимости, требующие срочной установки на пограничных прокси и балансировщиках нагрузки. Необновленные NGINX-инстансы и Ingress-контроллеры создают прямой риск компрометации внутреннего сетевого контура. Инфраструктурным командам стоит проверить версии проксирующих узлов и зависимости Ingress в кластерах Kubernetes.
-  [Read more](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JMkc1bEZSMVNyVkp2djRjazNOSVU2NnQ1V0Q2QlNKTXVnWS1aWW9qN1lWWm9JV2ctMEJvSzFhbmpZZFhWbW5DT2pqU0dQN09IYlB6ekplTGk1MmpWdy1QaHFn?oc=5)
-
 - **Alarming runC Flaws Enable Hackers To Exploit Docker Containers For Root Access - HotHardware**
-  Уязвимости побега из контейнера на уровне runC нивелируют стандартную изоляцию Docker и containerd, предоставляя атакующему root-доступ к хосту. Это подтверждает необходимость запуска процессов от непривилегированного пользователя и обязательного включения профилей seccomp. Обновление низкоуровневых сред исполнения на всех нодах и хостах контейнеризации должно быть в приоритете.
+  Низкоуровневые уязвимости в runC нарушают базовую изоляцию контейнеров как в Docker, так и в средах оркестрации. Когда выход на хостовую систему возможен из непривилегированного контейнера, обновление самого рантайма на нодах становится первоочередной задачей по сравнению с пересборкой образов.
   [Read more](https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTE0X1FvWGtLRDhBZXROVWUzcFdZN1hUSEZFNm0zSV9MajZUYm5vM0lDNVdKd0xfdHZpbWhFYnUtTUI5ckpsRHJMdnVjZl9Nb2NYd0dTeFY2bmZyZkNwbDU0S2Z3S3NxM1FpS1FrVVg1cnBFQlZrRzgzalZTWXliZjFfaHJqMTZJaXlCRA?oc=5)
 
+- **Nginx 1.29.8 and FreeNginx Released With Critical Security Updates - CyberSecurityNews**
+  Одновременный выпуск обновлений безопасности для официального Nginx и форка FreeNginx указывает на дефекты в базовой логике обработки запросов. Публичные reverse proxy требуют оперативного обновления для предотвращения атак типа DoS и повреждения памяти на периметре.
+  [Read more](https://news.google.com/rss/articles/CBMidEFVX3lxTE0tWVRPaG9lTlJMZFVyVGFNb2VKZ1g5WlAyQzlzMUVrWHZRSkRoSklKTzNSV184eWg5ZUNrS2wzX1VTVklacjJDZjZGSHY4NElReHhpcHI3WnI0VWNyUUZJb0ktY1V6c1NIS082SXVDMF9vUHFB0gF6QVVfeXFMTlpQZnZsRWlzLWJvSUFqUkY1a0RxMHlodFJXRzNGY2lZWnItMjFmU0hiNXN2MXplaTAtdlNSb0dZVWI2MHp6U1M2ZmVNeXptWlpsQTB5N09zaU12OGVnNTRFZ0diZ2w2cWl1UTU2YzlHY1BPTmxoLXpoc0E?oc=5)
+
 - **Enhancing Developer Productivity: Finch’s Support for Development Containers and the Finch Daemon - Amazon Web Services (AWS)**
-  Поддержка спецификации devcontainer и постоянного демона в AWS Finch устраняет главные препятствия для отказа от проприетарных сред контейнеризации на рабочих станциях. Для команд, стандартизирующих окружение разработки через devcontainer.json, это дает готовую open-source альтернативу на macOS и Linux. Новые возможности упрощают интеграцию с IDE без необходимости лицензирования коммерческого ПО.
+  Поддержка devcontainers и фонового демона в Finch закрывает ключевые функциональные пробелы по сравнению с Docker Desktop. Переход на открытые rootless-инструменты контейнеризации для локальной разработки позволяет избавиться от проприетарных лицензий без отказа от привычных стандартов окружения.
   [Read more](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEJ4S280bmpMT3M1SElkU2w3MVZpU25zTE1TNXRYNHVBVHY3UUtKYWJyTjF4cGhYUzFqSWQxcGFscEZsOXRVaEVRak5wYWpCR0NBNHNaaWZ1aGNrVVhDX0JpVE5hQ1NtWTRuN0s3dmp2ZXF2MkdjZXFPeFVEbFNPU2pnRnRsdWRDUzVJMGdsMEExMGc2blZsUm4xd3o4S0wzb0ZRXzI2WFpsWVhqb25MRGVHWkE2UnZfdUdPRVh2V21VeTM2Qmthd2UwLVJJLVdCZFE?oc=5)
 
 - **Google-Backed Software Developer GitLab Eyes Sale, Reuters Says - Bloomberg.com**
-  Сообщения о возможной продаже GitLab отражают общую консолидацию на рынке инструментов для разработки и CI/CD. Смена владельца неизбежно повлияет на стратегию развития, ценообразование и поддержку редакции GitLab Community Edition. Инженерам, использующим self-hosted инстансы GitLab, стоит внимательно следить за изменениями в политике лицензирования платформы.
+  Слухи о возможной продаже GitLab отражают продолжающуюся консолидацию на рынке DevSecOps-платформ. Для команд, эксплуатирующих self-hosted инсталляции GitLab, смена владельца всегда несет риск пересмотра условий лицензирования, уровней поддержки и границ функционала в open-core редакции.
   [Read more](https://news.google.com/rss/articles/CBMiswFBVV95cUxPTUdBNmJQbXNrSENsUzNrRmFUZDNkTG1ZaUhsS2NEZTYtck42UkZpNkdTRTBSRzJTc2drdnlHWlpMTjhzcmZ3YlljbGVqWnJHenBVb0NHbTk5OE1tc3Q4cVpMamxWUlhJdGdPaElPckpHbGJHbzA5MzRNX0xXTkl5MXVPRzRrLWZkVjBueHp4TEJYOTRYU0lrSzNweE9lRDl5SnViYmpLRnJDakJrT01ha1g5MA?oc=5)
-
-- **macOS 26: Native container support delights developers – and not just them - heise online**
-  Появление нативной поддержки контейнеров в macOS снижает накладные расходы по памяти и процессору, характерные для промежуточных виртуальных машин Linux. Ускорение дискового ввода-вывода и запуск на уровне системы заметно упростят локальное тестирование и оркестрацию сервисов на рабочих станциях Mac. При этом ключевым фактором остается совместимость с бинарными сборками под Linux.
-  [Read more](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5)
 
 ## Архив
 
