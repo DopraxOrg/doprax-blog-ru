@@ -1229,7 +1229,8 @@
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlM4SDNiNGVTM05pWE1QSFE0Q1BrZENVMlNJMVdPVjNxVkstZHBBQ19GZHN5VzByMUdfOGJOeG5OWUN4dW95dWo2ZTBFaGpUbjZ4dHpLQ3J5OXVZb3lON1ZSMUF4cHFTZWFlMVgwNnl2TGtIdXE0eHA4WWNOdUViTmZxR08zejRVYUw4M3BBMXc5UlhMdk82MHRrSFVQTnhuUE1HcEdyUHJVWHlVaWFFXzh4anc?oc=5",
           "commentary": "Нативный запуск контейнеров на macOS устраняет накладные расходы виртуализации и задержки файловой системы, которые годами замедляли работу Docker на технике Apple. Это заметно снижает потребление оперативной памяти и ускоряет локальный запуск тяжелых многоконтейнерных стеков."
         }
-      ]
+      ],
+      "2026-08-23": []
     }
   }
 }
